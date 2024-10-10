@@ -1,0 +1,37 @@
+<error>
+<domain>OTHER</domain>
+<lang>Text</lang>
+<checker>SIGMA.container_running_as_root</checker>
+<type>sigma.container_running_as_root</type>
+<subtype>dockerfile</subtype>
+<file>C:/Temp/test/WebGoat-main/Dockerfile_desktop</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The Docker container is configured to run as the root user.}}</description>
+<line>1</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Explicitly set the last `USER` value to a non-root user to prevent the container from running in a privileged context.}}</description>
+<line>1</line>
+</event>
+<extra>container_running_as_root_dockerfile -- //Dockerfile_desktop -- ##Σ-markup - FROM</extra>
+<subcategory>dockerfile</subcategory>
+<antecedentMerge>
+<checker>SIGMA.container_running_as_root_dockerfile</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Container running as root</type>
+<cwe>269</cwe>
+<localEffect></localEffect>
+<longDescription>The Docker container is configured to run as the root user.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

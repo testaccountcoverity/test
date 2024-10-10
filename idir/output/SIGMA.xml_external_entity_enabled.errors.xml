@@ -1,0 +1,41 @@
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.xml_external_entity_enabled</checker>
+<type>sigma.xml_external_entity_enabled</type>
+<subtype>input_factory</subtype>
+<file>C:/Temp/test/WebGoat-main/src/main/java/org/owasp/webgoat/lessons/xxe/CommentsCache.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.xxe.CommentsCache::parseXml(CommentsCache, String)Comment</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The application parses XML using the `javax.xml.stream.XMLInputFactory` class which has not been configured to prevent expansion of external entities during XML parsing by disabling the XML external entities and DTD features. External entity expansion may cause a server-side request forgery, denial of service, exposure of sensitive data or unwanted server requests.}}</description>
+<line>98</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Disable external entities and DTDs by either: * setting the property `XMLInputFactory.SUPPORT_DTD` to `false`, or * by setting `XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES` to `false` and `XMLConstants.ACCESS_EXTERNAL_DTD` to an empty string.}}</description>
+<line>98</line>
+</event>
+<extra>xml_external_entity_enabled_input_factory -- lessons/xxe/CommentsCache.java</extra>
+<subcategory>input_factory</subcategory>
+<antecedentMerge>
+<checker>SIGMA.xml_external_entity_enabled_input_factory</checker>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.xml_external_entity_enabled</checker>
+<extra>xml_external_entity_enabled_core_java -- lessons/xxe/CommentsCache.java</extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>XML external entity processing enabled</type>
+<cwe>611</cwe>
+<localEffect></localEffect>
+<longDescription>The application parses XML using the `javax.xml.stream.XMLInputFactory` class which has not been configured to prevent expansion of external entities during XML parsing by disabling the XML external entities and DTD features. External entity expansion may cause a server-side request forgery, denial of service, exposure of sensitive data or unwanted server requests.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

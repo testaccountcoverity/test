@@ -1,0 +1,9 @@
+{
+  "covAnalyzeArgs" : [
+    "--spotbugs-include",
+    "coverity-default",
+    "--webapp-security"
+  ],
+  "fileOptions" : [],
+  "fileCheckerOptions" : []
+}

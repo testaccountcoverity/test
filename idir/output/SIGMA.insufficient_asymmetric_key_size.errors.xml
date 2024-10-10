@@ -1,0 +1,120 @@
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.insufficient_asymmetric_key_size</checker>
+<type>sigma.insufficient_asymmetric_key_size</type>
+<subtype>core_java</subtype>
+<file>C:/Temp/test/WebGoat-main/src/it/java/org/owasp/webgoat/JWTLessonIntegrationTest.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.JWTLessonIntegrationTest::deleteTomThroughJkuClaim(JWTLessonIntegrationTest)Void</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The application uses an asymmetric algorithm with insufficient key size, making the ciphertext data vulnerable to brute force attacks.}}</description>
+<line>251</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Modify the application to adhere to the following minimum key size requirements:
+* 3072 bit key and 283 bit modulus for Diffie-Hellman and DSA algorithms.
+* 3072 bit key for RSA algorithms.
+* 256 bit domain parameters for elliptic curve algorithms.}}</description>
+<line>251</line>
+</event>
+<extra>insufficient_asymmetric_key_size_core_java -- owasp/webgoat/JWTLessonIntegrationTest.java</extra>
+<subcategory>core_java</subcategory>
+<antecedentMerge>
+<checker>SIGMA.insufficient_asymmetric_key_size_core_java</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Insufficient Asymmetric Key Size</type>
+<cwe>326</cwe>
+<localEffect></localEffect>
+<longDescription>The application uses an asymmetric algorithm with insufficient key size, making the ciphertext data vulnerable to brute force attacks.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.insufficient_asymmetric_key_size</checker>
+<type>sigma.insufficient_asymmetric_key_size</type>
+<subtype>core_java</subtype>
+<file>C:/Temp/test/WebGoat-main/src/main/java/org/owasp/webgoat/lessons/cryptography/CryptoUtil.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.cryptography.CryptoUtil::generateKeyPair()KeyPair</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The application uses an asymmetric algorithm with insufficient key size, making the ciphertext data vulnerable to brute force attacks.}}</description>
+<line>38</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Modify the application to adhere to the following minimum key size requirements:
+* 3072 bit key and 283 bit modulus for Diffie-Hellman and DSA algorithms.
+* 3072 bit key for RSA algorithms.
+* 256 bit domain parameters for elliptic curve algorithms.}}</description>
+<line>38</line>
+</event>
+<extra>insufficient_asymmetric_key_size_core_java -- lessons/cryptography/CryptoUtil.java</extra>
+<subcategory>core_java</subcategory>
+<antecedentMerge>
+<checker>SIGMA.insufficient_asymmetric_key_size_core_java</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Insufficient Asymmetric Key Size</type>
+<cwe>326</cwe>
+<localEffect></localEffect>
+<longDescription>The application uses an asymmetric algorithm with insufficient key size, making the ciphertext data vulnerable to brute force attacks.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.insufficient_asymmetric_key_size</checker>
+<type>sigma.insufficient_asymmetric_key_size</type>
+<subtype>core_java</subtype>
+<file>C:/Temp/test/WebGoat-main/src/test/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderJKUEndpointTest.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.claimmisuse.JWTHeaderJKUEndpointTest::generateRsaKey(JWTHeaderJKUEndpointTest)KeyPair</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The application uses an asymmetric algorithm with insufficient key size, making the ciphertext data vulnerable to brute force attacks.}}</description>
+<line>51</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Modify the application to adhere to the following minimum key size requirements:
+* 3072 bit key and 283 bit modulus for Diffie-Hellman and DSA algorithms.
+* 3072 bit key for RSA algorithms.
+* 256 bit domain parameters for elliptic curve algorithms.}}</description>
+<line>51</line>
+</event>
+<extra>insufficient_asymmetric_key_size_core_java -- jwt/claimmisuse/JWTHeaderJKUEndpointTest.java</extra>
+<subcategory>core_java</subcategory>
+<antecedentMerge>
+<checker>SIGMA.insufficient_asymmetric_key_size_core_java</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Insufficient Asymmetric Key Size</type>
+<cwe>326</cwe>
+<localEffect></localEffect>
+<longDescription>The application uses an asymmetric algorithm with insufficient key size, making the ciphertext data vulnerable to brute force attacks.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

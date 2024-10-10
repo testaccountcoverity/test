@@ -1,0 +1,40 @@
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_ignored_start_time</checker>
+<type>sigma.jwt_ignored_start_time</type>
+<subtype>jose4j</subtype>
+<file>C:/Temp/test/WebGoat-main/src/main/java/org/owasp/webgoat/webwolf/jwt/JWTToken.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.webwolf.jwt.JWTToken::validateSignature(String, String)Boolean</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The instance of `JwtConsumerBuilder` ignores the not-before time by default. When the verified JWT contains the `nbd` field, the `setRequireNotBefore()` method should be invoked explicitly to verify the token's not-before time.
+Ignoring the not-before setting of a JSON web token means it may become valid before the particular point in time, and thus the attacker may use the invalid token to access resource.}}</description>
+<line>124</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Verify that the token's start time is valid by invoking the `setRequireNotBefore()` method on the `JwtConsumerBuilder`, when the token should only be valid after some point in time.
+Invoke the `setAllowedClockSkewInSeconds()` method, if the application needs to tolerate a small amount of clock skew.}}</description>
+<line>124</line>
+</event>
+<extra>jwt_ignored_start_time_jose4j -- webwolf/jwt/JWTToken.java</extra>
+<subcategory>jose4j</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_ignored_start_time_jose4j</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>JSON Web Token not before time ignored</type>
+<cwe>613</cwe>
+<localEffect></localEffect>
+<longDescription>The instance of `JwtConsumerBuilder` ignores the not-before time by default. When the verified JWT contains the `nbd` field, the `setRequireNotBefore()` method should be invoked explicitly to verify the token's not-before time.
+Ignoring the not-before setting of a JSON web token means it may become valid before the particular point in time, and thus the attacker may use the invalid token to access resource.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

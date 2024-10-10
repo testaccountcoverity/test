@@ -1,0 +1,56 @@
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>MISSING_BREAK</checker>
+<type>missing_break</type>
+<subtype>logic_error</subtype>
+<file>C:/Temp/test/WebGoat-main/src/main/resources/webgoat/static/js/libs/ace.js</file>
+<isRapidScan>false</isRapidScan>
+<function>!ace.js!%IPFE%50:%ANONYMOUS:this.endOperation</function>
+<functionMergeName>!ace.js!%IPFE:%ANONYMOUS:this.endOperation</functionMergeName>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<main>true</main>
+<tag>unterminated_case</tag>
+<description>{CovLStrv2{{t{The case for value {0} is not terminated by a {code{break}} statement.}{{code{&quot;center-animate&quot;}}}}}}</description>
+<line>13122</line>
+<column>26</column>
+</event>
+<event>
+<tag>fallthrough</tag>
+<description>{CovLStrv2{{t{The above case falls through to this one.}}}}</description>
+<line>13124</line>
+<column>26</column>
+</event>
+<extra>center-animate</extra>
+<subcategory>none</subcategory>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>MISSING_BREAK</checker>
+<type>missing_break</type>
+<subtype>logic_error</subtype>
+<file>C:/Temp/test/WebGoat-main/src/main/resources/webgoat/static/js/libs/ace.js</file>
+<isRapidScan>false</isRapidScan>
+<function>!ace.js!%IPFE%29:%ANONYMOUS:this.add</function>
+<functionMergeName>!ace.js!%IPFE:%ANONYMOUS:this.add</functionMergeName>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<main>true</main>
+<tag>unterminated_case</tag>
+<description>{CovLStrv2{{t{The case for {0} is not terminated by a {code{break}} statement.}{{code{this.$behaviours}}}}}}</description>
+<line>6785</line>
+<column>16</column>
+</event>
+<event>
+<tag>fallthrough</tag>
+<description>{CovLStrv2{{t{The above case falls through to this one.}}}}</description>
+<line>6787</line>
+<column>16</column>
+</event>
+<extra>$behaviours,this</extra>
+<subcategory>none</subcategory>
+</error>

@@ -1,0 +1,37 @@
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_no_claims_validation</checker>
+<type>sigma.jwt_no_claims_validation</type>
+<subtype>jose4j</subtype>
+<file>C:/Temp/test/WebGoat-main/src/main/java/org/owasp/webgoat/webwolf/jwt/JWTToken.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.webwolf.jwt.JWTToken::validateSignature(String, String)Boolean</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The application invokes `setSkipAllValidators`, `setSkipDefaultAudienceValidation` or `setSkipAllDefaultValidators` to ignore validating JSON Web Token claims. This can be exploited by attackers to reuse an existing JWT signed for other scenarios.}}</description>
+<line>124</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Avoid invoking `setSkipAllValidators`, `setSkipDefaultAudienceValidation` or `setSkipAllDefaultValidators` which disable JSON Web Token claims validation.}}</description>
+<line>124</line>
+</event>
+<extra>jwt_no_claims_validation_jose4j -- webwolf/jwt/JWTToken.java</extra>
+<subcategory>jose4j</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_no_claims_validation_jose4j</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>JSON Web Token decoded without claims verification</type>
+<cwe>345</cwe>
+<localEffect></localEffect>
+<longDescription>The application invokes `setSkipAllValidators`, `setSkipDefaultAudienceValidation` or `setSkipAllDefaultValidators` to ignore validating JSON Web Token claims. This can be exploited by attackers to reuse an existing JWT signed for other scenarios.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

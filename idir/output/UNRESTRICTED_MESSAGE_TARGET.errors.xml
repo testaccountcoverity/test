@@ -1,0 +1,39 @@
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>UNRESTRICTED_MESSAGE_TARGET</checker>
+<type>unrestricted_cross_origin_message_target_event</type>
+<file>C:/Temp/test/WebGoat-main/src/main/resources/webgoat/static/js/libs/ace.js</file>
+<isRapidScan>false</isRapidScan>
+<function>!ace.js!%IPFE%7:%COND_exports.nextTick</function>
+<functionMergeName>!ace.js!%IPFE:%COND_exports.nextTick</functionMergeName>
+<ordered>true</ordered>
+<event>
+<tag>assign</tag>
+<description>{CovLStrv2{{t{Assigning {0} to {1}.}{{code{window}}}{{code{win}}}}}}</description>
+<line>1728</line>
+<column>9</column>
+</event>
+<event>
+<tag>pass</tag>
+<description>{CovLStrv2{{t{Passing {0} to {1}.}{{code{&quot;*&quot;}}}{{code{win.postMessage}}}}}}</description>
+<line>1740</line>
+<column>9</column>
+</event>
+<event>
+<main>true</main>
+<tag>unrestricted_message_target</tag>
+<description>{CovLStrv2{{t{Calling the function {0} with a {code{targetOrigin}} argument of {code{&quot;*&quot;}}, rather than specifying an exact URI value.}{{code{win.postMessage}}}}}}</description>
+<line>1740</line>
+<column>9</column>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{{t{Always specify an exact target origin or {code{&quot;/&quot;}}, not {code{&quot;*&quot;}}, when sending data to other windows. Using {code{&quot;/&quot;}} will implicitly restrict to the same origin.}}}}</description>
+<line>1740</line>
+<column>9</column>
+</event>
+<extra>messageName</extra>
+<subcategory>none</subcategory>
+</error>

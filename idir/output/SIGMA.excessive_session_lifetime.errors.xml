@@ -1,0 +1,40 @@
+<error>
+<domain>OTHER</domain>
+<lang>Text</lang>
+<checker>SIGMA.excessive_session_lifetime</checker>
+<type>sigma.excessive_session_lifetime</type>
+<subtype>spring_boot_properties</subtype>
+<file>C:/Temp/test/WebGoat-main/src/main/resources/application-webwolf.properties</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The session is configured with an excessively long timeout value. Session-based attacks require an active session. Therefore, the longer a session persists, the more time an attacker has to hijack the session.}}</description>
+<line>14</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the session expiration time to a value greater than or equal to 0, but less than 30 minutes in order to substantially reduce the window of opportunity for session-based attacks.}}</description>
+<line>14</line>
+</event>
+<extra>excessive_session_lifetime_spring_boot_properties -- main/resources/application-webwolf.properties -- ##Σ-markup - ##Σ-markup - server.servlet.session.timeout</extra>
+<subcategory>spring_boot_properties</subcategory>
+<antecedentMerge>
+<checker>SIGMA.excessive_session_lifetime_node_google_cloud_datastore</checker>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.excessive_session_lifetime_spring_boot_properties</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Excessive session lifetime</type>
+<cwe>613</cwe>
+<localEffect></localEffect>
+<longDescription>The session is configured with an excessively long timeout value. Session-based attacks require an active session. Therefore, the longer a session persists, the more time an attacker has to hijack the session.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

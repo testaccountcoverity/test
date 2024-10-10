@@ -1,0 +1,447 @@
+[INFO] Executing command: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-manage-emit --dir C:\Temp\test\WebGoat-main\idir create
+[INFO] Telemetry is enabled
+[INFO] Executing command: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-manage-emit --dir C:\Temp\test\WebGoat-main\idir list-capture-diagnostics
+[INFO] Executing action Delete compiler configurations for intermediate directory 'C:\Temp\test\WebGoat-main\idir'
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\build-compiler-configs\coverity_config.xml --compiler gcc --comptype gcc --template
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\build-compiler-configs\coverity_config.xml --compiler cc --comptype gcc --template
+[WARNING] Template config template-gcc-config-1 already exists for gcc-* and will be reused. 
+[WARNING] Template config template-gcc-config-2 already exists for *-gcc and will be reused. 
+[WARNING] Template config template-g++-config-1 already exists for g++-* and will be reused. 
+[WARNING] Template config template-g++-config-2 already exists for *-g++ and will be reused. 
+[WARNING] Template config template-ld-config-0 already exists for ld and will be reused. 
+[WARNING] Template config template-ar-config-0 already exists for ar and will be reused. 
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\build-compiler-configs\coverity_config.xml --compiler c++ --comptype g++ --template
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\build-compiler-configs\coverity_config.xml --compiler clang --comptype clangcc --template
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\build-compiler-configs\coverity_config.xml --compiler java --comptype java --template
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\build-compiler-configs\coverity_config.xml --compiler go --comptype go --template
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\build-compiler-configs\coverity_config.xml --compiler ccache --comptype prefix --template
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\build-compiler-configs\coverity_config.xml --compiler kotlinc --comptype kotlinc --template
+[WARNING] Template config template-java-config-0 already exists for java and will be reused. 
+[WARNING] Template config template-apt-config-0 already exists for apt and will be reused. 
+[WARNING] Template config template-javaw-config-0 already exists for javaw and will be reused. 
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\build-compiler-configs\coverity_config.xml --compiler csc --comptype csc --template
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\build-compiler-configs\coverity_config.xml --compiler vbc --comptype vbc --template
+[WARNING] Template config template-dotnet-config-0 already exists for dotnet and will be reused. 
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\build-compiler-configs\coverity_config.xml --compiler cl --comptype msvc --template
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\build-compiler-configs\coverity_config.xml --compiler i686-w64-mingw32-gcc --comptype gcc --template
+[WARNING] Template config template-gcc-config-1 already exists for gcc-* and will be reused. 
+[WARNING] Template config template-gcc-config-2 already exists for *-gcc and will be reused. 
+[WARNING] Template config template-g++-config-1 already exists for g++-* and will be reused. 
+[WARNING] Template config template-g++-config-2 already exists for *-g++ and will be reused. 
+[WARNING] Template config template-ld-config-0 already exists for ld and will be reused. 
+[WARNING] Template config template-ar-config-0 already exists for ar and will be reused. 
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\build-compiler-configs\coverity_config.xml --compiler i686-w64-mingw32-c++ --comptype g++ --template
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\build-compiler-configs\coverity_config.xml --compiler mingw32-gcc --comptype gcc --template
+[WARNING] Template config template-gcc-config-1 already exists for gcc-* and will be reused. 
+[WARNING] Template config template-gcc-config-2 already exists for *-gcc and will be reused. 
+[WARNING] Template config template-g++-config-1 already exists for g++-* and will be reused. 
+[WARNING] Template config template-g++-config-2 already exists for *-g++ and will be reused. 
+[WARNING] Template config template-ld-config-0 already exists for ld and will be reused. 
+[WARNING] Template config template-ar-config-0 already exists for ar and will be reused. 
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\build-compiler-configs\coverity_config.xml --compiler mingw32-c++ --comptype g++ --template
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\build-compiler-configs\coverity_config.xml --compiler x86_64-w64-mingw32-gcc --comptype gcc --template
+[WARNING] Template config template-gcc-config-1 already exists for gcc-* and will be reused. 
+[WARNING] Template config template-gcc-config-2 already exists for *-gcc and will be reused. 
+[WARNING] Template config template-g++-config-1 already exists for g++-* and will be reused. 
+[WARNING] Template config template-g++-config-2 already exists for *-g++ and will be reused. 
+[WARNING] Template config template-ld-config-0 already exists for ld and will be reused. 
+[WARNING] Template config template-ar-config-0 already exists for ar and will be reused. 
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\build-compiler-configs\coverity_config.xml --compiler x86_64-w64-mingw32-c++ --comptype g++ --template
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\buildless-compiler-configs\coverity_config.xml --dart
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\buildless-compiler-configs\coverity_config.xml --javascript
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\buildless-compiler-configs\coverity_config.xml --php
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\buildless-compiler-configs\coverity_config.xml --python
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\buildless-compiler-configs\coverity_config.xml --ruby
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\buildless-compiler-configs\coverity_config.xml --javafs
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\buildless-compiler-configs\coverity_config.xml --comptype capture-config-files --file-regex $capture-config-files$ --template
+[WARNING] Configuration already exists for file regex $capture-config-files$
+          and it will not be updated.
+[INFO] Executing action Configure build compiler: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-configure -c C:\Temp\test\WebGoat-main\idir\coverity-cli\buildless-compiler-configs\coverity_config.xml --csfs
+[INFO] Loading compiler config 'C:\Temp\test\WebGoat-main\idir\coverity-cli\build-compiler-configs\coverity_config.xml'
+[INFO] Loading compiler config 'C:\Temp\test\WebGoat-main\idir\coverity-cli\buildless-compiler-configs\coverity_config.xml'
+[INFO] Executing action Invoke build capture: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-build --dir C:\Temp\test\WebGoat-main\idir -c C:\Temp\test\WebGoat-main\idir\coverity-cli\build-compiler-configs\coverity_config.xml --append-log --no-security-da --enable-scan-transparency-data mvn -B -DskipTests -DskipITs clean install -f C:\Temp\test\WebGoat-main\pom.xml
+Coverity Build Capture (64-bit) version 2024.6.1 on Windows 11 Enterprise, 64-bit (build 22631)
+Internal version numbers: d59b675bea p-2024.6-push-53
+
+[ERROR] Build command not found. 'mvn'
+[INFO] Executing action Invalidate capture results
+[INFO] Executing action Update uncaptured file timestamps for project "C:\Temp\test\WebGoat-main\pom.xml"
+[INFO] Executing command: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-manage-emit --dir C:\Temp\test\WebGoat-main\idir list-capture-diagnostics
+[INFO] Manage dependency: <org.apache.commons:commons-exec:jar:1.4.0:compile> -> <org.apache.commons:commons-exec:jar:1.4.0:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter-validation:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter-validation:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.projectlombok:lombok:jar:1.18.32:provided> -> <org.projectlombok:lombok:jar:1.18.32:provided>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter-undertow:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter-undertow:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter-web:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter-web:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter-actuator:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter-actuator:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.flywaydb:flyway-core:jar:9.22.3:compile> -> <org.flywaydb:flyway-core:jar:9.22.3:compile>
+[INFO] Manage dependency: <org.asciidoctor:asciidoctorj:jar:2.5.13:compile> -> <org.asciidoctor:asciidoctorj:jar:2.5.13:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter-data-jpa:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter-data-jpa:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter-security:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter-security:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter-thymeleaf:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter-thymeleaf:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter-oauth2-client:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter-oauth2-client:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.thymeleaf.extras:thymeleaf-extras-springsecurity6:jar:3.1.2.RELEASE:compile> -> <org.thymeleaf.extras:thymeleaf-extras-springsecurity6:jar:3.1.2.RELEASE:compile>
+[INFO] Manage dependency: <jakarta.servlet:jakarta.servlet-api:jar:6.0.0:compile> -> <jakarta.servlet:jakarta.servlet-api:jar:6.0.0:compile>
+[INFO] Manage dependency: <org.hsqldb:hsqldb:jar:2.7.2:compile> -> <org.hsqldb:hsqldb:jar:2.7.2:compile>
+[INFO] Manage dependency: <org.jsoup:jsoup:jar:1.18.1:compile> -> <org.jsoup:jsoup:jar:1.18.1:compile>
+[INFO] Manage dependency: <com.nulab-inc:zxcvbn:jar:1.9.0:compile> -> <com.nulab-inc:zxcvbn:jar:1.9.0:compile>
+[INFO] Manage dependency: <com.thoughtworks.xstream:xstream:jar:1.4.5:compile> -> <com.thoughtworks.xstream:xstream:jar:1.4.5:compile>
+[INFO] Manage dependency: <cglib:cglib-nodep:jar:3.3.0:compile> -> <cglib:cglib-nodep:jar:3.3.0:compile>
+[INFO] Manage dependency: <xml-resolver:xml-resolver:jar:1.2:compile> -> <xml-resolver:xml-resolver:jar:1.2:compile>
+[INFO] Manage dependency: <io.jsonwebtoken:jjwt:jar:0.9.1:compile> -> <io.jsonwebtoken:jjwt:jar:0.9.1:compile>
+[INFO] Manage dependency: <com.auth0:jwks-rsa:jar:0.22.1:compile> -> <com.auth0:jwks-rsa:jar:0.22.1:compile>
+[INFO] Manage dependency: <com.auth0:java-jwt:jar:4.4.0:compile> -> <com.auth0:java-jwt:jar:4.4.0:compile>
+[INFO] Manage dependency: <com.google.guava:guava:jar:33.3.0-jre:compile> -> <com.google.guava:guava:jar:33.3.0-jre:compile>
+[INFO] Manage dependency: <commons-io:commons-io:jar:2.16.1:compile> -> <commons-io:commons-io:jar:2.16.1:compile>
+[INFO] Manage dependency: <org.apache.commons:commons-lang3:jar:3.13.0:compile> -> <org.apache.commons:commons-lang3:jar:3.13.0:compile>
+[INFO] Manage dependency: <org.apache.commons:commons-text:jar:1.12.0:compile> -> <org.apache.commons:commons-text:jar:1.12.0:compile>
+[INFO] Manage dependency: <org.bitbucket.b_c:jose4j:jar:0.9.3:compile> -> <org.bitbucket.b_c:jose4j:jar:0.9.3:compile>
+[INFO] Manage dependency: <org.webjars:bootstrap:jar:5.3.3:compile> -> <org.webjars:bootstrap:jar:5.3.3:compile>
+[INFO] Manage dependency: <org.webjars:jquery:jar:3.7.1:compile> -> <org.webjars:jquery:jar:3.7.1:compile>
+[INFO] Manage dependency: <org.webjars:webjars-locator-core:jar:0.59:compile> -> <org.webjars:webjars-locator-core:jar:0.59:compile>
+[INFO] Manage dependency: <jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.2:compile> -> <jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.2:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter-test:jar:3.2.6:test> -> <org.springframework.boot:spring-boot-starter-test:jar:3.2.6:test>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-properties-migrator:jar:3.2.6:runtime> -> <org.springframework.boot:spring-boot-properties-migrator:jar:3.2.6:runtime>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.apache.tomcat.embed:tomcat-embed-el:jar:10.1.24:compile> -> <org.apache.tomcat.embed:tomcat-embed-el:jar:10.1.24:compile>
+[INFO] Manage dependency: <org.hibernate.validator:hibernate-validator:jar:8.0.1.Final:compile> -> <org.hibernate.validator:hibernate-validator:jar:8.0.1.Final:compile>
+[INFO] Manage dependency: <io.undertow:undertow-core:jar:2.3.13.Final:compile> -> <io.undertow:undertow-core:jar:2.3.13.Final:compile>
+[INFO] Manage dependency: <io.undertow:undertow-servlet:jar:2.3.13.Final:compile> -> <io.undertow:undertow-servlet:jar:2.3.13.Final:compile>
+[INFO] Manage dependency: <io.undertow:undertow-websockets-jsr:jar:2.3.13.Final:compile> -> <io.undertow:undertow-websockets-jsr:jar:2.3.13.Final:compile>
+[INFO] Manage dependency: <org.apache.tomcat.embed:tomcat-embed-el:jar:10.1.24:compile> -> <org.apache.tomcat.embed:tomcat-embed-el:jar:10.1.24:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter-json:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter-json:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-actuator-autoconfigure:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-actuator-autoconfigure:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.projectlombok:lombok:jar:1.18.20:compile> -> <org.projectlombok:lombok:jar:1.18.32:compile>
+[INFO] Manage dependency: <com.google.code.gson:gson:jar:2.10.1:compile> -> <com.google.code.gson:gson:jar:2.10.1:compile>
+[INFO] Manage dependency: <org.jruby:jruby:jar:9.4.7.0:compile> -> <org.jruby:jruby:jar:9.4.8.0:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter-aop:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter-aop:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter-jdbc:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter-jdbc:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.hibernate.orm:hibernate-core:jar:6.4.8.Final:compile> -> <org.hibernate.orm:hibernate-core:jar:6.4.8.Final:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.thymeleaf:thymeleaf-spring6:jar:3.1.2.RELEASE:compile> -> <org.thymeleaf:thymeleaf-spring6:jar:3.1.2.RELEASE:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.thymeleaf:thymeleaf-spring6:jar:3.1.2.RELEASE:compile> -> <org.thymeleaf:thymeleaf-spring6:jar:3.1.2.RELEASE:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.7:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <junit:junit:jar:3.8.1:compile> -> <junit:junit:jar:4.13.2:compile>
+[INFO] Manage dependency: <com.google.guava:guava:jar:32.1.1-jre:runtime> -> <com.google.guava:guava:jar:33.3.0-jre:compile>
+[INFO] Manage dependency: <org.apache.commons:commons-lang3:jar:3.14.0:compile> -> <org.apache.commons:commons-lang3:jar:3.13.0:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:1.7.21:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.13:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <jakarta.activation:jakarta.activation-api:jar:2.1.3:compile> -> <jakarta.activation:jakarta.activation-api:jar:2.1.3:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-test:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-test:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-test-autoconfigure:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-test-autoconfigure:jar:3.2.6:compile>
+[INFO] Manage dependency: <com.jayway.jsonpath:json-path:jar:2.9.0:compile> -> <com.jayway.jsonpath:json-path:jar:2.9.0:compile>
+[INFO] Manage dependency: <jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.2:compile> -> <jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.2:compile>
+[INFO] Manage dependency: <net.minidev:json-smart:jar:2.5.1:compile> -> <net.minidev:json-smart:jar:2.5.1:compile>
+[INFO] Manage dependency: <org.awaitility:awaitility:jar:4.2.1:compile> -> <org.awaitility:awaitility:jar:4.2.1:compile>
+[INFO] Manage dependency: <org.hamcrest:hamcrest:jar:2.2:compile> -> <org.hamcrest:hamcrest:jar:2.2:compile>
+[INFO] Manage dependency: <org.skyscreamer:jsonassert:jar:1.5.1:compile> -> <org.skyscreamer:jsonassert:jar:1.5.1:compile>
+[INFO] Manage dependency: <org.xmlunit:xmlunit-core:jar:2.9.1:compile> -> <org.xmlunit:xmlunit-core:jar:2.9.1:compile>
+[INFO] Manage dependency: <com.google.guava:guava:jar:32.0.1-jre:compile> -> <com.google.guava:guava:jar:33.3.0-jre:compile>
+[INFO] Manage dependency: <org.apache.httpcomponents.client5:httpclient5:jar:5.2.1:compile> -> <org.apache.httpcomponents.client5:httpclient5:jar:5.2.3:compile>
+[INFO] Manage dependency: <org.xmlunit:xmlunit-core:jar:2.9.1:compile> -> <org.xmlunit:xmlunit-core:jar:2.9.1:compile>
+[INFO] Manage dependency: <org.xmlunit:xmlunit-legacy:jar:2.9.1:compile> -> <org.xmlunit:xmlunit-legacy:jar:2.9.1:compile>
+[INFO] Manage dependency: <org.xmlunit:xmlunit-placeholders:jar:2.9.1:compile> -> <org.xmlunit:xmlunit-placeholders:jar:2.9.1:compile>
+[INFO] Manage dependency: <com.jayway.jsonpath:json-path:jar:2.8.0:compile> -> <com.jayway.jsonpath:json-path:jar:2.9.0:compile>
+[INFO] Manage dependency: <org.ow2.asm:asm:jar:9.5:compile> -> <org.ow2.asm:asm:jar:9.7:compile>
+[INFO] Manage dependency: <org.apache.commons:commons-lang3:jar:3.12.0:compile> -> <org.apache.commons:commons-lang3:jar:3.13.0:compile>
+[INFO] Manage dependency: <commons-io:commons-io:jar:2.13.0:compile> -> <commons-io:commons-io:jar:2.16.1:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:1.7.36:runtime> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.hamcrest:hamcrest:jar:2.2:compile> -> <org.hamcrest:hamcrest:jar:2.2:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot:jar:3.2.6:runtime> -> <org.springframework.boot:spring-boot:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-configuration-metadata:jar:3.2.6:runtime> -> <org.springframework.boot:spring-boot-configuration-metadata:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-autoconfigure:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-autoconfigure:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter-logging:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter-logging:jar:3.2.6:compile>
+[INFO] Manage dependency: <jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile> -> <jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile>
+[INFO] Manage dependency: <org.yaml:snakeyaml:jar:2.2:compile> -> <org.yaml:snakeyaml:jar:2.2:compile>
+[INFO] Manage dependency: <jakarta.validation:jakarta.validation-api:jar:3.0.2:compile> -> <jakarta.validation:jakarta.validation-api:jar:3.0.2:compile>
+[INFO] Manage dependency: <org.jboss.logging:jboss-logging:jar:3.4.3.Final:compile> -> <org.jboss.logging:jboss-logging:jar:3.5.3.Final:compile>
+[INFO] Manage dependency: <com.fasterxml:classmate:jar:1.5.1:compile> -> <com.fasterxml:classmate:jar:1.6.0:compile>
+[INFO] Manage dependency: <org.jboss.logging:jboss-logging:jar:3.4.3.Final:compile> -> <org.jboss.logging:jboss-logging:jar:3.5.3.Final:compile>
+[INFO] Manage dependency: <io.undertow:undertow-core:jar:2.3.13.Final:compile> -> <io.undertow:undertow-core:jar:2.3.13.Final:compile>
+[INFO] Manage dependency: <jakarta.servlet:jakarta.servlet-api:jar:6.0.0:compile> -> <jakarta.servlet:jakarta.servlet-api:jar:6.0.0:compile>
+[INFO] Manage dependency: <jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile> -> <jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile>
+[INFO] Manage dependency: <io.undertow:undertow-core:jar:2.3.13.Final:compile> -> <io.undertow:undertow-core:jar:2.3.13.Final:compile>
+[INFO] Manage dependency: <io.undertow:undertow-servlet:jar:2.3.13.Final:compile> -> <io.undertow:undertow-servlet:jar:2.3.13.Final:compile>
+[INFO] Manage dependency: <jakarta.websocket:jakarta.websocket-api:jar:2.1.0:compile> -> <jakarta.websocket:jakarta.websocket-api:jar:2.1.1:compile>
+[INFO] Manage dependency: <jakarta.websocket:jakarta.websocket-client-api:jar:2.1.0:compile> -> <jakarta.websocket:jakarta.websocket-client-api:jar:2.1.1:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-actuator:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-actuator:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-autoconfigure:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-autoconfigure:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.aspectj:aspectjweaver:jar:1.9.22:compile> -> <org.aspectj:aspectjweaver:jar:1.9.22:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-starter:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-starter:jar:3.2.6:compile>
+[INFO] Manage dependency: <com.zaxxer:HikariCP:jar:5.0.1:compile> -> <com.zaxxer:HikariCP:jar:5.0.1:compile>
+[INFO] Manage dependency: <jakarta.persistence:jakarta.persistence-api:jar:3.1.0:compile> -> <jakarta.persistence:jakarta.persistence-api:jar:3.1.0:compile>
+[INFO] Manage dependency: <jakarta.transaction:jakarta.transaction-api:jar:2.0.1:compile> -> <jakarta.transaction:jakarta.transaction-api:jar:2.0.1:compile>
+[INFO] Manage dependency: <org.jboss.logging:jboss-logging:jar:3.5.0.Final:runtime> -> <org.jboss.logging:jboss-logging:jar:3.5.3.Final:compile>
+[INFO] Manage dependency: <com.fasterxml:classmate:jar:1.5.1:runtime> -> <com.fasterxml:classmate:jar:1.6.0:compile>
+[INFO] Manage dependency: <net.bytebuddy:byte-buddy:jar:1.14.11:runtime> -> <net.bytebuddy:byte-buddy:jar:1.14.16:compile>
+[INFO] Manage dependency: <jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.0:runtime> -> <jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.2:compile>
+[INFO] Manage dependency: <jakarta.annotation:jakarta.annotation-api:jar:2.0.0:compile> -> <jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.2:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.aspectj:aspectjweaver:jar:1.9.22.1:compile> -> <org.aspectj:aspectjweaver:jar:1.9.22:compile>
+[INFO] Manage dependency: <org.thymeleaf:thymeleaf:jar:3.1.2.RELEASE:compile> -> <org.thymeleaf:thymeleaf:jar:3.1.2.RELEASE:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.7:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.hamcrest:hamcrest-core:jar:1.3:compile> -> <org.hamcrest:hamcrest-core:jar:2.2:compile>
+[INFO] Manage dependency: <junit:junit:jar:3.8.1:compile> -> <junit:junit:jar:4.13.2:compile>
+[INFO] Manage dependency: <jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.2:compile> -> <jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.2:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-test:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-test:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot-autoconfigure:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot-autoconfigure:jar:3.2.6:compile>
+[INFO] Manage dependency: <net.minidev:json-smart:jar:2.5.0:runtime> -> <net.minidev:json-smart:jar:2.5.1:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.11:runtime> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <net.bytebuddy:byte-buddy:jar:1.12.21:compile> -> <net.bytebuddy:byte-buddy:jar:1.14.16:compile>
+[INFO] Manage dependency: <org.hamcrest:hamcrest:jar:2.1:compile> -> <org.hamcrest:hamcrest:jar:2.2:compile>
+[INFO] Manage dependency: <net.bytebuddy:byte-buddy:jar:1.14.9:compile> -> <net.bytebuddy:byte-buddy:jar:1.14.16:compile>
+[INFO] Manage dependency: <net.bytebuddy:byte-buddy-agent:jar:1.14.9:compile> -> <net.bytebuddy:byte-buddy-agent:jar:1.14.16:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.13:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.9:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.9:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.9:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.13:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.9:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.13:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.13:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.13:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.13:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.apache.httpcomponents.core5:httpcore5:jar:5.2.4:compile> -> <org.apache.httpcomponents.core5:httpcore5:jar:5.2.4:compile>
+[INFO] Manage dependency: <org.apache.httpcomponents.core5:httpcore5-h2:jar:5.2.4:compile> -> <org.apache.httpcomponents.core5:httpcore5-h2:jar:5.2.4:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:1.7.36:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.xmlunit:xmlunit-core:jar:2.9.1:compile> -> <org.xmlunit:xmlunit-core:jar:2.9.1:compile>
+[INFO] Manage dependency: <junit:junit:jar:3.8.1:compile> -> <junit:junit:jar:4.13.2:compile>
+[INFO] Manage dependency: <org.xmlunit:xmlunit-core:jar:2.9.1:compile> -> <org.xmlunit:xmlunit-core:jar:2.9.1:compile>
+[INFO] Manage dependency: <org.hamcrest:hamcrest-core:jar:2.2:compile> -> <org.hamcrest:hamcrest-core:jar:2.2:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:1.7.32:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.apache.commons:commons-lang3:jar:3.12.0:compile> -> <org.apache.commons:commons-lang3:jar:3.13.0:compile>
+[INFO] Manage dependency: <commons-io:commons-io:jar:2.11.0:compile> -> <commons-io:commons-io:jar:2.16.1:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.7:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.apache.httpcomponents:httpcore:jar:4.4.13:compile> -> <org.apache.httpcomponents:httpcore:jar:4.4.16:compile>
+[INFO] Manage dependency: <commons-codec:commons-codec:jar:1.11:compile> -> <commons-codec:commons-codec:jar:1.16.1:compile>
+[INFO] Manage dependency: <org.apache.commons:commons-lang3:jar:3.11:compile> -> <org.apache.commons:commons-lang3:jar:3.13.0:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot:jar:3.2.6:compile>
+[INFO] Manage dependency: <ch.qos.logback:logback-classic:jar:1.4.14:compile> -> <ch.qos.logback:logback-classic:jar:1.4.14:compile>
+[INFO] Manage dependency: <org.slf4j:jul-to-slf4j:jar:2.0.13:compile> -> <org.slf4j:jul-to-slf4j:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.jboss.logging:jboss-logging:jar:3.4.1.Final:compile> -> <org.jboss.logging:jboss-logging:jar:3.5.3.Final:compile>
+[INFO] Manage dependency: <org.springframework.boot:spring-boot:jar:3.2.6:compile> -> <org.springframework.boot:spring-boot:jar:3.2.6:compile>
+[INFO] Manage dependency: <org.ow2.asm:asm:jar:9.2:compile> -> <org.ow2.asm:asm:jar:9.7:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:1.7.30:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.2:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.7:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <net.minidev:json-smart:jar:[1.3.3,2.4.10]:compile> -> <net.minidev:json-smart:jar:2.5.1:compile>
+[INFO] Manage dependency: <org.hamcrest:hamcrest:jar:2.2:compile> -> <org.hamcrest:hamcrest:jar:2.2:compile>
+[INFO] Manage dependency: <jakarta.activation:jakarta.activation-api:jar:2.1.3:compile> -> <jakarta.activation:jakarta.activation-api:jar:2.1.3:compile>
+[INFO] Manage dependency: <org.ow2.asm:asm:jar:9.6:compile> -> <org.ow2.asm:asm:jar:9.7:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.13:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.13:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.9:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.9:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.9:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.13:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.9:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.apache.httpcomponents.core5:httpcore5:jar:5.2.4:compile> -> <org.apache.httpcomponents.core5:httpcore5:jar:5.2.4:compile>
+[INFO] Manage dependency: <org.yaml:snakeyaml:jar:1.33:compile> -> <org.yaml:snakeyaml:jar:2.2:compile>
+[INFO] Manage dependency: <org.apache.commons:commons-lang3:jar:3.11:compile> -> <org.apache.commons:commons-lang3:jar:3.13.0:compile>
+[INFO] Manage dependency: <ch.qos.logback:logback-core:jar:1.4.14:compile> -> <ch.qos.logback:logback-core:jar:1.4.14:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.7:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:1.7.36:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.13:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.jboss.logging:jboss-logging:jar:3.3.1.Final:compile> -> <org.jboss.logging:jboss-logging:jar:3.5.3.Final:compile>
+[INFO] Manage dependency: <org.ow2.asm:asm:jar:9.2:compile> -> <org.ow2.asm:asm:jar:9.7:compile>
+[INFO] Manage dependency: <org.ow2.asm:asm:jar:9.2:compile> -> <org.ow2.asm:asm:jar:9.7:compile>
+[INFO] Manage dependency: <org.ow2.asm:asm:jar:9.2:compile> -> <org.ow2.asm:asm:jar:9.7:compile>
+[INFO] Manage dependency: <jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.0:compile> -> <jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.2:compile>
+[INFO] Manage dependency: <jakarta.activation:jakarta.activation-api:jar:2.1.1:compile> -> <jakarta.activation:jakarta.activation-api:jar:2.1.3:compile>
+[INFO] Manage dependency: <org.slf4j:slf4j-api:jar:2.0.9:compile> -> <org.slf4j:slf4j-api:jar:2.0.13:compile>
+[INFO] Manage dependency: <org.ow2.asm:asm:jar:9.2:compile> -> <org.ow2.asm:asm:jar:9.7:compile>
+[INFO] Identified 244 dependencies.
+[INFO] 
+[INFO] Dependency Download Summary:
+[INFO]     PROJECT: 0
+[INFO]     LOCAL CACHE: 244
+[INFO]     DOWNLOADED: 0
+[INFO]     MISSING: 0
+[INFO]     FILE SYSTEM: 0
+[INFO] 
+[INFO] Executing action Invoke cov-internal-capture-files to capture Java sources: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-internal-capture-files --capture-list-file C:\Temp\test\WebGoat-main\idir\coverity-cli\capture-files-src-list-2928533219 -c C:\Temp\test\WebGoat-main\idir\coverity-cli\buildless-compiler-configs\coverity_config.xml @utf-8@C:\Temp\test\WebGoat-main\idir\coverity-cli\capture-files-resp-2692147599
+[INFO] Buildless capture started.
+[INFO] Emitting 355 Files.
+|0----------25-----------50----------75---------100|
+****************************************************
+[INFO] Buildless capture completed.
+
+[INFO] Executing action Invalidate capture results
+[INFO] Executing action Update uncaptured file timestamps for project "C:\Temp\test\WebGoat-main\pom.xml"
+[INFO] Executing command: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-manage-emit --dir C:\Temp\test\WebGoat-main\idir list-capture-diagnostics
+[INFO] Executing action Emit files using buildless capture: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-internal-capture-files --dir C:\Temp\test\WebGoat-main\idir -c C:\Temp\test\WebGoat-main\idir\coverity-cli\buildless-compiler-configs\coverity_config.xml --ticker-mode no-spin --append-log --capture-list-file C:\Temp\test\WebGoat-main\idir\coverity-cli\capture-file-list-3273736269
+[INFO] Buildless capture started.
+[INFO] Emitting 531 Files.
+|0----------25-----------50----------75---------100|
+****************************************************
+[INFO] Buildless capture completed.
+
+[INFO] Executing action deleteResidualTUs C:\Temp\test\WebGoat-main\idir
+[INFO] Executing command: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-manage-emit --dir C:\Temp\test\WebGoat-main\idir list-capture-diagnostics
+[INFO] Executing action Invalidate capture results
+[INFO] Executing action Invoke cov-security-da: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-security-da --dir C:\Temp\test\WebGoat-main\idir --ticker-mode no-spin
+[STATUS] Running security dynamic analysis...
+Looking for translation units
+|0----------25-----------50----------75---------100|
+****************************************************
+[INFO] Executing command: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-manage-emit --dir C:\Temp\test\WebGoat-main\idir list-capture-diagnostics
+Capture summary:
+    SUCCEEDED: 529
+    INCOMPLETE: 0
+    FAILED: 357
+    IGNORED: 144
+    FILES CAPTURED: 529
+    LINES OF CODE: 55873
+[INFO] Capture phase took 48.184s.
+[INFO] Analyzing project locally using Coverity Analysis version 2024.6.1
+[INFO] Executing command: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-manage-emit --dir C:\Temp\test\WebGoat-main\idir list-capture-invocations
+[INFO] Executing command: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-analyze --dir C:\Temp\test\WebGoat-main\idir --strip-path C:\Temp\test\WebGoat-main --ticker-mode no-spin --webapp-security --enable-scan-transparency-data
+Coverity Static Analysis version 2024.6.1 on Windows 11 Enterprise, 64-bit (build 22631)
+Internal version numbers: d59b675bea p-2024.6-push-53
+
+Using 20 workers as limited by CPU(s)
+Looking for translation units
+|0----------25-----------50----------75---------100|
+****************************************************
+Revising to 15 workers due to memory constraints. The memory
+requirement is computed from this intermediate directory
+(including 0.04 million lines of relevant code) and this set of
+enabled checkers.
+[STATUS] Computing links for 893 translation units
+|0----------25-----------50----------75---------100|
+****************************************************
+[STATUS] Detecting duplicate files
+|0----------25-----------50----------75---------100|
+****************************************************
+[STATUS] Computing virtual overrides
+|0----------25-----------50----------75---------100|
+****************************************************
+[STATUS] Running framework analysis
+|0----------25-----------50----------75---------100|
+****************************************************
+[STATUS] Resolving dataflow directives
+|0----------25-----------50----------75---------100|
+****************************************************
+[STATUS] Computing callgraph
+|0----------25-----------50----------75---------100|
+****************************************************
+[STATUS] Topologically sorting 4579 functions
+|0----------25-----------50----------75---------100|
+****************************************************
+[NOTE] The cov-security-da output is missing or incomplete for Java. XSS checker results may be degraded.
+       The Command Reference for cov-security-da describes when the command needs to be run manually.
+[STATUS] Preparing for bytecode analysis
+|0----------25-----------50----------75---------100|
+****************************************************
+WARNING: Cannot run SpotBugs analysis because there are no compiler outputs
+in the emit. To fix this, refer to the documentation for cov-emit-java. To
+work around this problem by disabling SpotBugs, use --disable-spotbugs.
+
+[STATUS] Preparing for source code analysis
+|0----------25-----------50----------75---------100|
+****************************************************
+[STATUS] Running Sigma analysis
+[STATUS] Computing node costs
+|0----------25-----------50----------75---------100|
+****************************************************
+[STATUS] Running analysis
+|0----------25-----------50----------75---------100|
+****************************************************
+[STATUS] Exporting summaries
+|0----------25-----------50----------75---------100|
+****************************************************
+[STATUS] Computing callgraph metrics for 5263 functions
+|0----------25-----------50----------75---------100|
+****************************************************
+[STATUS] Calculating cross-references
+|0----------25-----------50----------75---------100|
+****************************************************
+Analysis summary report:
+------------------------
+Files analyzed                 : 571 Total
+    HTML                       : 44
+    Java                       : 355
+    JavaScript                 : 108
+    Text                       : 64
+Total LoC input to cov-analyze : 45667
+Functions analyzed             : 4572
+Paths analyzed                 : 47924
+Time taken by analysis         : 00:02:08
+Defect occurrences found       : 145 Total
+                                   1 COPY_PASTE_ERROR
+                                   3 DEADCODE
+                                   1 DOM_XSS
+                                   1 FORWARD_NULL
+                                   2 MISSING_BREAK
+                                  13 NO_EFFECT
+                                   4 NULL_RETURNS
+                                   1 SIGMA.container_running_as_root
+                                   1 SIGMA.excessive_session_lifetime
+                                  76 SIGMA.hardcoded_secret
+                                   3 SIGMA.insufficient_asymmetric_key_size
+                                   1 SIGMA.jwt_ignored_expiration_time
+                                   1 SIGMA.jwt_ignored_start_time
+                                   1 SIGMA.jwt_no_claims_validation
+                                  16 SIGMA.jwt_non_expiring_token
+                                   8 SIGMA.jwt_untrusted_decode
+                                   4 SIGMA.missing_tls
+                                   1 SIGMA.unrestricted_postmessage_target
+                                   2 SIGMA.verbose_error_message
+                                   1 SIGMA.weak_hash
+                                   2 SIGMA.weak_password_hash
+                                   1 SIGMA.xml_external_entity_enabled
+                                   1 UNRESTRICTED_MESSAGE_TARGET
+
+Analysis summary after merging defects:
+    HIGH SEVERITY:    2 issue(s)
+    MEDIUM SEVERITY: 43 issue(s)
+    LOW SEVERITY:    71 issue(s)
+    AUDIT SEVERITY:   0 issue(s)
+[INFO] Analyze phase took 2m14.381s.
+[INFO] Committing analysis results using Coverity Commit version 2024.6.1
+[INFO] Executing command: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-commit-defects --dir C:\Temp\test\WebGoat-main\idir --url https://synopsys-coverity-balwurk:8442/ --stream webgoatcli --on-new-cert distrust --ticker-mode no-spin --auth-key-file C:\Users\JoãoVideira\AppData\Roaming\Coverity\authkeys\ak-synopsys-coverity-balwurk-8442
+Coverity Defect Commit Client version 2024.6.1 on Windows 11 Enterprise, 64-bit (build 22631)
+Internal version numbers: d59b675bea p-2024.6-push-53
+
+[STATUS] 2024-09-30 15:22:37 UTC - Committing 23 defect files...
+|0----------25-----------50----------75---------100|
+****************************************************
+[STATUS] 2024-09-30 15:22:40 UTC - Committing 529 file descriptions...
+|0----------25-----------50----------75---------100|
+****************************************************
+[STATUS] 2024-09-30 15:22:43 UTC - Committing 522 source files...
+|0----------25-----------50----------75---------100|
+****************************************************
+[STATUS] 2024-09-30 15:22:46 UTC - Committing 100 cross-reference bundles...
+|0----------25-----------50----------75---------100|
+****************************************************
+[STATUS] 2024-09-30 15:22:46 UTC - Committing 4572 functions...
+|0----------25-----------50----------75---------100|
+****************************************************
+[STATUS] 2024-09-30 15:22:47 UTC - Committing 23 defect files...
+|0----------25-----------50----------75---------100|
+****************************************************
+[STATUS] 2024-09-30 15:22:49 UTC - Committing 5 output files...
+|0----------25-----------50----------75---------100|
+****************************************************
+[STATUS] 2024-09-30 15:22:50 UTC - Sending hashes for 116 summaries...
+|0----------25-----------50----------75---------100|
+****************************************************
+[STATUS] 2024-09-30 15:22:50 UTC - Committing 116 summaries...
+|0----------25-----------50----------75---------100|
+****************************************************
+New snapshot ID 10022 added.
+Elapsed time: 00:00:17
+Results are available at https://synopsys-coverity-balwurk:8442/query/defects.htm?stream=webgoatcli&outstanding=true
+[INFO] Commit phase took 20.999s.
+[INFO] Scan complete.

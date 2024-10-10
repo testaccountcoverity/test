@@ -1,0 +1,296 @@
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_untrusted_decode</checker>
+<type>sigma.jwt_untrusted_decode</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/it/java/org/owasp/webgoat/JWTLessonIntegrationTest.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.JWTLessonIntegrationTest::getSecretToken(JWTLessonIntegrationTest, String)String</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.}}</description>
+<line>75</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Modify the application to use `parseClaimsJws()` or `parsePlaintextJws()` instead, since these methods will automatically verify the token signature.}}</description>
+<line>75</line>
+</event>
+<extra>jwt_untrusted_decode_io_jsonwebtoken -- owasp/webgoat/JWTLessonIntegrationTest.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_untrusted_decode_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token decoded without signature verification</type>
+<cwe>345</cwe>
+<localEffect></localEffect>
+<longDescription>The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_untrusted_decode</checker>
+<type>sigma.jwt_untrusted_decode</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/main/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpoint.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.JWTVotesEndpoint::getVotes(JWTVotesEndpoint, String)MappingJacksonValue</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.}}</description>
+<line>155</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Modify the application to use `parseClaimsJws()` or `parsePlaintextJws()` instead, since these methods will automatically verify the token signature.}}</description>
+<line>155</line>
+</event>
+<extra>jwt_untrusted_decode_io_jsonwebtoken -- lessons/jwt/JWTVotesEndpoint.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_untrusted_decode_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token decoded without signature verification</type>
+<cwe>345</cwe>
+<localEffect></localEffect>
+<longDescription>The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_untrusted_decode</checker>
+<type>sigma.jwt_untrusted_decode</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/main/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpoint.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.JWTVotesEndpoint::vote(JWTVotesEndpoint, String, String)ResponseEntity</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.}}</description>
+<line>180</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Modify the application to use `parseClaimsJws()` or `parsePlaintextJws()` instead, since these methods will automatically verify the token signature.}}</description>
+<line>180</line>
+</event>
+<extra>jwt_untrusted_decode_io_jsonwebtoken -- lessons/jwt/JWTVotesEndpoint.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_untrusted_decode_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token decoded without signature verification</type>
+<cwe>345</cwe>
+<localEffect></localEffect>
+<longDescription>The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_untrusted_decode</checker>
+<type>sigma.jwt_untrusted_decode</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/main/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpoint.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.JWTVotesEndpoint::resetVotes(JWTVotesEndpoint, String)AttackResult</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.}}</description>
+<line>203</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Modify the application to use `parseClaimsJws()` or `parsePlaintextJws()` instead, since these methods will automatically verify the token signature.}}</description>
+<line>203</line>
+</event>
+<extra>jwt_untrusted_decode_io_jsonwebtoken -- lessons/jwt/JWTVotesEndpoint.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_untrusted_decode_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token decoded without signature verification</type>
+<cwe>345</cwe>
+<localEffect></localEffect>
+<longDescription>The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_untrusted_decode</checker>
+<type>sigma.jwt_untrusted_decode</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/main/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpoint.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.JWTRefreshEndpoint::checkout(JWTRefreshEndpoint, String)ResponseEntity</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.}}</description>
+<line>107</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Modify the application to use `parseClaimsJws()` or `parsePlaintextJws()` instead, since these methods will automatically verify the token signature.}}</description>
+<line>107</line>
+</event>
+<extra>jwt_untrusted_decode_io_jsonwebtoken -- lessons/jwt/JWTRefreshEndpoint.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_untrusted_decode_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token decoded without signature verification</type>
+<cwe>345</cwe>
+<localEffect></localEffect>
+<longDescription>The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_untrusted_decode</checker>
+<type>sigma.jwt_untrusted_decode</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/main/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpoint.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.JWTRefreshEndpoint::newToken(JWTRefreshEndpoint, String, Map)ResponseEntity</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.}}</description>
+<line>137</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Modify the application to use `parseClaimsJws()` or `parsePlaintextJws()` instead, since these methods will automatically verify the token signature.}}</description>
+<line>137</line>
+</event>
+<extra>jwt_untrusted_decode_io_jsonwebtoken -- lessons/jwt/JWTRefreshEndpoint.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_untrusted_decode_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token decoded without signature verification</type>
+<cwe>345</cwe>
+<localEffect></localEffect>
+<longDescription>The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_untrusted_decode</checker>
+<type>sigma.jwt_untrusted_decode</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/test/java/org/owasp/webgoat/lessons/jwt/TokenTest.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.TokenTest::test(TokenTest)Void</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.}}</description>
+<line>55</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Modify the application to use `parseClaimsJws()` or `parsePlaintextJws()` instead, since these methods will automatically verify the token signature.}}</description>
+<line>55</line>
+</event>
+<extra>jwt_untrusted_decode_io_jsonwebtoken -- lessons/jwt/TokenTest.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_untrusted_decode_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token decoded without signature verification</type>
+<cwe>345</cwe>
+<localEffect></localEffect>
+<longDescription>The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_untrusted_decode</checker>
+<type>sigma.jwt_untrusted_decode</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/test/java/org/owasp/webgoat/lessons/jwt/TokenTest.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.TokenTest::test(TokenTest)Void</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.}}</description>
+<line>57</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Modify the application to use `parseClaimsJws()` or `parsePlaintextJws()` instead, since these methods will automatically verify the token signature.}}</description>
+<line>57</line>
+</event>
+<extra>jwt_untrusted_decode_io_jsonwebtoken -- lessons/jwt/TokenTest.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_untrusted_decode_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token decoded without signature verification</type>
+<cwe>345</cwe>
+<localEffect></localEffect>
+<longDescription>The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

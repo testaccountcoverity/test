@@ -1,0 +1,8 @@
+Native Compiler invocation: ./ --coverity_resp_file=C:\Temp\test\WebGoat-main\idir\tmp\cicf-f1d4970786dea2c77f84f4540b2347cf\cov-translate-resp-file1
+Working directory: C:\Temp\test\WebGoat-main
+Comptype: javafs
+* Configuring cov-filesystem-capture-javafs-0 as a Java compiler
+Checking for 'mount' command
+Checking for Cygwin registry keys
+           * HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Cygnus Solutions\Cygwin
+           * HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Cygnus Solutions\Cygwin

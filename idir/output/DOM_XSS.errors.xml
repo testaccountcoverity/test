@@ -1,0 +1,63 @@
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>DOM_XSS</checker>
+<type>xss</type>
+<subtype>dom_xss</subtype>
+<file>C:/Temp/test/WebGoat-main/src/main/resources/lessons/jwt/js/jwt-final.js</file>
+<isRapidScan>false</isRapidScan>
+<function>!jwt-final.js!%SCRIPT</function>
+<functionMergeName>!jwt-final.js!%SCRIPT</functionMergeName>
+<ordered>true</ordered>
+<event>
+<tag>event_handler</tag>
+<description>{CovLStrv2{{t{Calling at a later point {0}.}{{code{follow}}}}{t{ This call registers an event handler (through {0}).}{{code{$.ajax({L}&quot;type&quot; : &quot;POST&quot;, &quot;url&quot;...}}}}}}</description>
+<line>1</line>
+<column>1</column>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Temp/test/WebGoat-main/src/main/resources/lessons/jwt/js/jwt-final.js</file>
+<function>!jwt-final.js!follow</function>
+<key>fb8533571a73cac533e21075fafac952</key>
+<id>1</id>
+</model_ptr>
+</event>
+<event>
+<tag>argument_taint</tag>
+<description>{CovLStrv2{{t{Parameter {0} is tainted when the callback function is called.}{{code{result}}}}}}</description>
+<line>5</line>
+<column>13</column>
+</event>
+<event>
+<main>true</main>
+<tag>sink</tag>
+<description>{CovLStrv2{{t{Calling at a later point {0}.}{{code{&lt;anonymous&gt;}}}}{t{ This call uses {0} for sensitive computation.}{{code{result}}}}}}</description>
+<line>1</line>
+<column>1</column>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Temp/test/WebGoat-main/src/main/resources/lessons/jwt/js/jwt-final.js</file>
+<function>!jwt-final.js!follow:%IPFE</function>
+<key>58a72605089adf77127582cb668cdccd</key>
+<id>0</id>
+</model_ptr>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{{t{The untrusted data reaches a sink that can either lead to HTML injection, JavaScript code execution, or the manipulation of a URL starting with the &quot;javascript:&quot; or &quot;data:&quot; schemes. Any of these can lead to a DOM XSS vulnerability.{ul{HTML injection: Either escape properly the untrusted data or use a safe API to insert this data to the DOM; direct HTML manipulation as text should be avoided.}{JavaScript code execution: Validate any untrusted data against a whitelist so it's not possible for an attacker to have its supplied code executing.}{URL manipulation: Make sure the scheme is whitelisted and doesn't allow for the injection of a URL like: &quot;data:text/html;,&lt;img/src/onerror=alert(1)&gt;&quot;.}}}}}}</description>
+<line>1</line>
+<column>1</column>
+</event>
+<extra>&lt;anonymous&gt;:&lt;event-handler&gt;</extra>
+<subcategory>none</subcategory>
+<antecedentMerge>
+<extra></extra>
+</antecedentMerge>
+<eventSetCaptions>
+<eventSetCaption>Flow of tainted data to a vulnerable sink</eventSetCaption>
+<eventSetCaption>Additional context</eventSetCaption>
+</eventSetCaptions>
+</error>

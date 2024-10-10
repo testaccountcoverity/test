@@ -1,0 +1,592 @@
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_non_expiring_token</checker>
+<type>sigma.jwt_non_expiring_token</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/main/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpoint.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.JWTVotesEndpoint::login(JWTVotesEndpoint, String, HttpServletResponse)Void</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.}}</description>
+<line>126</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the expiration time of the token by invoking `JwtBuilder.setExpiration()` or `Claims.setExpiration()`.}}</description>
+<line>126</line>
+</event>
+<extra>jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTVotesEndpoint.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_non_expiring_token_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token without expiration time</type>
+<cwe>613</cwe>
+<localEffect></localEffect>
+<longDescription>The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_non_expiring_token</checker>
+<type>sigma.jwt_non_expiring_token</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/main/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpoint.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.JWTRefreshEndpoint::createNewTokens(JWTRefreshEndpoint, String)Map</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.}}</description>
+<line>86</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the expiration time of the token by invoking `JwtBuilder.setExpiration()` or `Claims.setExpiration()`.}}</description>
+<line>86</line>
+</event>
+<extra>jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTRefreshEndpoint.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_non_expiring_token_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token without expiration time</type>
+<cwe>613</cwe>
+<localEffect></localEffect>
+<longDescription>The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_non_expiring_token</checker>
+<type>sigma.jwt_non_expiring_token</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/test/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpointTest.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.JWTSecretKeyEndpointTest::solveAssignment(JWTSecretKeyEndpointTest)Void</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.}}</description>
+<line>71</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the expiration time of the token by invoking `JwtBuilder.setExpiration()` or `Claims.setExpiration()`.}}</description>
+<line>71</line>
+</event>
+<extra>jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTSecretKeyEndpointTest.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_non_expiring_token_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token without expiration time</type>
+<cwe>613</cwe>
+<localEffect></localEffect>
+<longDescription>The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_non_expiring_token</checker>
+<type>sigma.jwt_non_expiring_token</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/test/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpointTest.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.JWTSecretKeyEndpointTest::solveAssignmentWithLowercase(JWTSecretKeyEndpointTest)Void</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.}}</description>
+<line>82</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the expiration time of the token by invoking `JwtBuilder.setExpiration()` or `Claims.setExpiration()`.}}</description>
+<line>82</line>
+</event>
+<extra>jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTSecretKeyEndpointTest.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_non_expiring_token_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token without expiration time</type>
+<cwe>613</cwe>
+<localEffect></localEffect>
+<longDescription>The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_non_expiring_token</checker>
+<type>sigma.jwt_non_expiring_token</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/test/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpointTest.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.JWTSecretKeyEndpointTest::oneOfClaimIsMissingShouldNotSolveAssignment(JWTSecretKeyEndpointTest)Void</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.}}</description>
+<line>94</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the expiration time of the token by invoking `JwtBuilder.setExpiration()` or `Claims.setExpiration()`.}}</description>
+<line>94</line>
+</event>
+<extra>jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTSecretKeyEndpointTest.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_non_expiring_token_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token without expiration time</type>
+<cwe>613</cwe>
+<localEffect></localEffect>
+<longDescription>The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_non_expiring_token</checker>
+<type>sigma.jwt_non_expiring_token</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/test/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpointTest.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.JWTSecretKeyEndpointTest::incorrectUser(JWTSecretKeyEndpointTest)Void</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.}}</description>
+<line>107</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the expiration time of the token by invoking `JwtBuilder.setExpiration()` or `Claims.setExpiration()`.}}</description>
+<line>107</line>
+</event>
+<extra>jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTSecretKeyEndpointTest.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_non_expiring_token_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token without expiration time</type>
+<cwe>613</cwe>
+<localEffect></localEffect>
+<longDescription>The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_non_expiring_token</checker>
+<type>sigma.jwt_non_expiring_token</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/test/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpointTest.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.JWTSecretKeyEndpointTest::incorrectToken(JWTSecretKeyEndpointTest)Void</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.}}</description>
+<line>122</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the expiration time of the token by invoking `JwtBuilder.setExpiration()` or `Claims.setExpiration()`.}}</description>
+<line>122</line>
+</event>
+<extra>jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTSecretKeyEndpointTest.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_non_expiring_token_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token without expiration time</type>
+<cwe>613</cwe>
+<localEffect></localEffect>
+<longDescription>The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_non_expiring_token</checker>
+<type>sigma.jwt_non_expiring_token</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/test/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpointTest.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.JWTSecretKeyEndpointTest::unsignedToken(JWTSecretKeyEndpointTest)Void</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.}}</description>
+<line>134</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the expiration time of the token by invoking `JwtBuilder.setExpiration()` or `Claims.setExpiration()`.}}</description>
+<line>134</line>
+</event>
+<extra>jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTSecretKeyEndpointTest.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_non_expiring_token_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token without expiration time</type>
+<cwe>613</cwe>
+<localEffect></localEffect>
+<longDescription>The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_non_expiring_token</checker>
+<type>sigma.jwt_non_expiring_token</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/test/java/org/owasp/webgoat/lessons/jwt/TokenTest.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.TokenTest::test(TokenTest)Void</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.}}</description>
+<line>48</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the expiration time of the token by invoking `JwtBuilder.setExpiration()` or `Claims.setExpiration()`.}}</description>
+<line>48</line>
+</event>
+<extra>jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/TokenTest.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_non_expiring_token_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token without expiration time</type>
+<cwe>613</cwe>
+<localEffect></localEffect>
+<longDescription>The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_non_expiring_token</checker>
+<type>sigma.jwt_non_expiring_token</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/test/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpointTest.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.JWTRefreshEndpointTest::solutionWithAlgNone(JWTRefreshEndpointTest)Void</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.}}</description>
+<line>102</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the expiration time of the token by invoking `JwtBuilder.setExpiration()` or `Claims.setExpiration()`.}}</description>
+<line>102</line>
+</event>
+<extra>jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTRefreshEndpointTest.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_non_expiring_token_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token without expiration time</type>
+<cwe>613</cwe>
+<localEffect></localEffect>
+<longDescription>The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_non_expiring_token</checker>
+<type>sigma.jwt_non_expiring_token</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/test/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpointTest.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.JWTVotesEndpointTest::solveAssignment(JWTVotesEndpointTest)Void</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.}}</description>
+<line>63</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the expiration time of the token by invoking `JwtBuilder.setExpiration()` or `Claims.setExpiration()`.}}</description>
+<line>63</line>
+</event>
+<extra>jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTVotesEndpointTest.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_non_expiring_token_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token without expiration time</type>
+<cwe>613</cwe>
+<localEffect></localEffect>
+<longDescription>The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_non_expiring_token</checker>
+<type>sigma.jwt_non_expiring_token</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/test/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpointTest.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.JWTVotesEndpointTest::solveAssignmentWithBoolean(JWTVotesEndpointTest)Void</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.}}</description>
+<line>81</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the expiration time of the token by invoking `JwtBuilder.setExpiration()` or `Claims.setExpiration()`.}}</description>
+<line>81</line>
+</event>
+<extra>jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTVotesEndpointTest.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_non_expiring_token_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token without expiration time</type>
+<cwe>613</cwe>
+<localEffect></localEffect>
+<longDescription>The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_non_expiring_token</checker>
+<type>sigma.jwt_non_expiring_token</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/test/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpointTest.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.JWTVotesEndpointTest::unknownUserWithValidTokenShouldNotBeAbleToVote(JWTVotesEndpointTest)Void</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.}}</description>
+<line>228</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the expiration time of the token by invoking `JwtBuilder.setExpiration()` or `Claims.setExpiration()`.}}</description>
+<line>228</line>
+</event>
+<extra>jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTVotesEndpointTest.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_non_expiring_token_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token without expiration time</type>
+<cwe>613</cwe>
+<localEffect></localEffect>
+<longDescription>The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_non_expiring_token</checker>
+<type>sigma.jwt_non_expiring_token</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/test/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpointTest.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.JWTVotesEndpointTest::unknownUserShouldSeeGuestView(JWTVotesEndpointTest)Void</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.}}</description>
+<line>246</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the expiration time of the token by invoking `JwtBuilder.setExpiration()` or `Claims.setExpiration()`.}}</description>
+<line>246</line>
+</event>
+<extra>jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTVotesEndpointTest.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_non_expiring_token_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token without expiration time</type>
+<cwe>613</cwe>
+<localEffect></localEffect>
+<longDescription>The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_non_expiring_token</checker>
+<type>sigma.jwt_non_expiring_token</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/test/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderKIDEndpointTest.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.claimmisuse.JWTHeaderKIDEndpointTest::solveAssignment(JWTHeaderKIDEndpointTest)Void</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.}}</description>
+<line>38</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the expiration time of the token by invoking `JwtBuilder.setExpiration()` or `Claims.setExpiration()`.}}</description>
+<line>38</line>
+</event>
+<extra>jwt_non_expiring_token_io_jsonwebtoken -- jwt/claimmisuse/JWTHeaderKIDEndpointTest.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_non_expiring_token_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token without expiration time</type>
+<cwe>613</cwe>
+<localEffect></localEffect>
+<longDescription>The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_non_expiring_token</checker>
+<type>sigma.jwt_non_expiring_token</type>
+<subtype>io_jsonwebtoken</subtype>
+<file>C:/Temp/test/WebGoat-main/src/test/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderJKUEndpointTest.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.lessons.jwt.claimmisuse.JWTHeaderJKUEndpointTest::createTokenAndSignIt(JWTHeaderJKUEndpointTest)String</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.}}</description>
+<line>81</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set the expiration time of the token by invoking `JwtBuilder.setExpiration()` or `Claims.setExpiration()`.}}</description>
+<line>81</line>
+</event>
+<extra>jwt_non_expiring_token_io_jsonwebtoken -- jwt/claimmisuse/JWTHeaderJKUEndpointTest.java</extra>
+<subcategory>io_jsonwebtoken</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_non_expiring_token_io_jsonwebtoken</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Medium</impact>
+<type>JSON Web Token without expiration time</type>
+<cwe>613</cwe>
+<localEffect></localEffect>
+<longDescription>The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

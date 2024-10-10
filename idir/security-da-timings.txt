@@ -1,0 +1,17 @@
+# Version: d59b675bea p-2024.6-push-53
+# Command Line: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-security-da --dir C:\Temp\test\WebGoat-main\idir --ticker-mode no-spin
+timer                                              ms      calls
+----------------------------------------------------------------
+cov_security_da::run                              140          1
+  cov_security_da::doSecurityDA                   140          1
+    Looking for translation units                   0          1
+    Computing links for translation units         125          1
+    xfer symbol cache                               0          1
+
+activity                                           ms      calls
+----------------------------------------------------------------
+cov_security_da::run                              140          1
+cov_security_da::doSecurityDA                     140          1
+Looking for translation units                       0          1
+Computing links for translation units             125          1
+xfer symbol cache                                   0          1

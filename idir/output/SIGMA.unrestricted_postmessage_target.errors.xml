@@ -1,0 +1,53 @@
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>SIGMA.unrestricted_postmessage_target</checker>
+<type>sigma.unrestricted_postmessage_target</type>
+<subtype>javascript_window</subtype>
+<file>C:/Temp/test/WebGoat-main/src/main/resources/webgoat/static/js/libs/ace.js</file>
+<isRapidScan>true</isRapidScan>
+<function>!&lt;placeholder&gt;!%ANONYMOUS:%ANONYMOUS(Unknown, Unknown)Unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The application sends a cross-document message by calling function `postMessage` without restricting the `targetOrigin` by passing `&quot;*&quot;` as the second argument. A malicious site can intercept the message by changing the location of the target window.}}</description>
+<line>1740</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Give an exact URI value for parameter `targetOrigin`.}}</description>
+<line>1740</line>
+</event>
+<extra>unrestricted_postmessage_target_javascript_window -- js/libs/ace.js</extra>
+<subcategory>javascript_window</subcategory>
+<antecedentMerge>
+<checker>SIGMA.unrestricted_postmessage_target_javascript_window</checker>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra>/libs/ace.js</extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>!&lt;placeholder&gt;!%ANONYMOUS:%ANONYMOUS(Unknown, Unknown)Unknown</function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function>!&lt;placeholder&gt;!%ANONYMOUS:%ANONYMOUS(Unknown, Unknown)Unknown</function>
+<extra>/libs/ace.js</extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Unrestricted post message target</type>
+<cwe>668</cwe>
+<localEffect></localEffect>
+<longDescription>The application sends a cross-document message by calling function `postMessage` without restricting the `targetOrigin` by passing `&quot;*&quot;` as the second argument. A malicious site can intercept the message by changing the location of the target window.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

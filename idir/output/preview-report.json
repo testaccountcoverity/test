@@ -1,0 +1,4248 @@
+{
+  "header" : {
+    "format" : "commit preview report",
+    "version" : 2
+  },
+  "analysisInfo" : {
+    "ownerAssignmentRule" : "default_component_owner",
+    "comparisonSnapshotId" : null,
+    "reportTimestamp" : "2024-09-30T15:22:37.324Z",
+    "user" : "admin",
+    "command" : "C:\\Users\\JoãoVideira\\AppData\\Roaming\\Synopsys\\desktop\\controller\\installedtools\\coverity-analysis\\2024.6.1\\bin\\cov-analyze --dir C:\\Temp\\test\\WebGoat-main\\idir --strip-path C:\\Temp\\test\\WebGoat-main --ticker-mode no-spin --webapp-security --enable-scan-transparency-data"
+  },
+  "issueInfo" : [ {
+    "cid" : 10043,
+    "mergeKey" : "5467d21966f7af5c41b986ad9a5a351e",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/webwolf/jwt/JWTTokenTest.java",
+      "function" : "unknown",
+      "extra" : "eyJhbGciOiJIUzI1NiJ9.eyJ0ZXN0IjoidGVzdCJ9.KOobRHDYyaesV_doOk11XXGKSONwzllraAaqqM4VFE4",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 44,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: JWT token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10044,
+    "mergeKey" : "38077235d03f37680717773c71fe5eb3",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "MISSING_BREAK",
+      "file" : "/src/main/resources/webgoat/static/js/libs/ace.js",
+      "function" : "!ace.js!%IPFE%50:%ANONYMOUS:this.endOperation",
+      "extra" : "center-animate",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 13122,
+      "mainEventDescription" : "The case for value \"\"center-animate\"\" is not terminated by a \"break\" statement.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10045,
+    "mergeKey" : "634b18200cd27e7d8050e47e84268867",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpoint.java",
+      "function" : "unknown",
+      "extra" : "PASSWORD-bm5nhSkxCXZkKRy4",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 61,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10046,
+    "mergeKey" : "f0faf96d8ec1a5ea76ef66137cc53948",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/deserialization/DeserializeTest.java",
+      "function" : "unknown",
+      "extra" : "token-rO0ABXQAVklmIHlvdSBkZXNlcmlhbGl6ZSBtZSBkb3duLCBJIHNoYWxsIGJlY29tZSBtb3JlIHBvd2VyZnVsIHRoYW4geW91IGNhbiBwb3NzaWJseSBpbWFnaW5l",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 100,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10050,
+    "mergeKey" : "9f6f6516f70f58965559b46c83094648",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_untrusted_decode",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpoint.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.JWTRefreshEndpoint::checkout(JWTRefreshEndpoint, String)ResponseEntity",
+      "extra" : "jwt_untrusted_decode_io_jsonwebtoken -- lessons/jwt/JWTRefreshEndpoint.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 107,
+      "mainEventDescription" : "The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10051,
+    "mergeKey" : "8cee959cf1e6bbe808e8af54471de87d",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_non_expiring_token",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpointTest.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.JWTSecretKeyEndpointTest::solveAssignment(JWTSecretKeyEndpointTest)Void",
+      "extra" : "jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTSecretKeyEndpointTest.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 71,
+      "mainEventDescription" : "The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10052,
+    "mergeKey" : "f04f7e5d335e23590fb9342aaae4bb95",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/deserialization/DeserializeTest.java",
+      "function" : "unknown",
+      "extra" : "token-rO0ABXNyADFvcmcuZHVtbXkuaW5zZWN1cmUuZnJhbWV3b3JrLlZ1bG5lcmFibGVUYXNrSG9sZGVyAAAAAAAAAAICAANMABZyZXF1ZXN0ZWRFeGVjdXRpb25UaW1ldAAZTGphdmEvdGltZS9Mb2NhbERhdGVUaW1lO0wACnRhc2tBY3Rpb250ABJMamF2YS9sYW5nL1N0cmluZztMAAh0YXNrTmFtZXEAfgACeHBzcgANamF2YS50aW1lLlNlcpVdhLobIkiyDAAAeHB3DgUAAAfjCR4IDC0YfvNIeHQACmVjaG8gaGVsbG90AAhzYXlIZWxsbw",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 86,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10054,
+    "mergeKey" : "79c4b964d4d1590c80cadbf0ce2c2ae7",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/lessontemplate/SampleAttack.java",
+      "function" : "unknown",
+      "extra" : "secretValue-secr37Value",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 44,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Secret (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10161,
+    "mergeKey" : "6acb2dc05bf86735ad082f88f5a05fbb",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-string.quasi.start",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 370,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10056,
+    "mergeKey" : "166f9cf734e4ff6e2c9cdda801022e2b",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/webwolf/jwt/JWTTokenTest.java",
+      "function" : "unknown",
+      "extra" : "eyJhbGciOiJIUzI1NiJ9.eyJ0ZXsdfdfsaasfddfasN0IjoidGVzdCJ9.KOobRHDYyaesV_doOk11XXGKSONwzllraAaqqM4VFE4",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 55,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: JWT token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10057,
+    "mergeKey" : "1ea516a0d8ce5c6fecef075229f5467a",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.missing_tls",
+      "file" : "/src/test/resources/application-webgoat-test.properties",
+      "function" : "unknown",
+      "extra" : "missing_tls_spring_boot_datasource_properties -- test/resources/application-webgoat-test.properties -- ##Σ-markup - ##Σ-markup - spring.datasource.url",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "spring_boot_datasource_properties",
+      "mainEventLineNumber" : 3,
+      "mainEventDescription" : "The Spring Boot application's data source is configured to disable SSL by setting the `spring.datasource.url` attribute to a value without `useSSL=true`. Thus, sensitive data transmitted over an insecure communication channel could be read and modified by attackers.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Text"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10058,
+    "mergeKey" : "9e809a66d639dd63925fe5f9c758ccbb",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/webwolf/user/UserServiceTest.java",
+      "function" : "unknown",
+      "extra" : "password-guest",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 72,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10059,
+    "mergeKey" : "1645450dfc37183719934c5b58c17e56",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_non_expiring_token",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpointTest.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.JWTSecretKeyEndpointTest::incorrectUser(JWTSecretKeyEndpointTest)Void",
+      "extra" : "jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTSecretKeyEndpointTest.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 107,
+      "mainEventDescription" : "The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10061,
+    "mergeKey" : "a9ce954ce0c433c1452229dbe5b9c02d",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_non_expiring_token",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpointTest.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.JWTSecretKeyEndpointTest::unsignedToken(JWTSecretKeyEndpointTest)Void",
+      "extra" : "jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTSecretKeyEndpointTest.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 134,
+      "mainEventDescription" : "The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10062,
+    "mergeKey" : "3f9b8ee6fb1c772f5346d4d2c41ee76c",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "DEADCODE",
+      "file" : "/src/main/resources/webgoat/static/plugins/bootstrap-wysihtml5/js/wysihtml5-0.3.0.js",
+      "function" : "!wysihtml5-0.3.0.js!%IPFE",
+      "extra" : "temporary",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 344,
+      "mainEventDescription" : "Execution cannot reach the expression \"util.areHostObjects(el, [\"previousSibling\", \"nextSibling\", \"childNodes\", \"parentNode\"])\" inside this statement: \"if (!util.areHostMethods(el...\".",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    }, {
+      "checker" : "DEADCODE",
+      "file" : "/src/main/resources/webgoat/static/plugins/bootstrap-wysihtml5/js/wysihtml5-0.3.0.js",
+      "function" : "!wysihtml5-0.3.0.js!%IPFE",
+      "extra" : "temporary",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 355,
+      "mainEventDescription" : "Execution cannot reach the expression \"util.areHostObjects(el, [\"previousSibling\", \"nextSibling\", \"childNodes\", \"parentNode\"])\" inside this statement: \"if (!util.areHostMethods(te...\".",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10065,
+    "mergeKey" : "361b99271065554238d875bb202b6f3b",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.excessive_session_lifetime",
+      "file" : "/src/main/resources/application-webwolf.properties",
+      "function" : "unknown",
+      "extra" : "excessive_session_lifetime_spring_boot_properties -- main/resources/application-webwolf.properties -- ##Σ-markup - ##Σ-markup - server.servlet.session.timeout",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "spring_boot_properties",
+      "mainEventLineNumber" : 14,
+      "mainEventDescription" : "The session is configured with an excessively long timeout value. Session-based attacks require an active session. Therefore, the longer a session persists, the more time an attacker has to hijack the session.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Text"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10064,
+    "mergeKey" : "6161e607b40b72f5bc52b9993a67b5fc",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpoint.java",
+      "function" : "unknown",
+      "extra" : "JWT_PASSWORD-bm5n3SkxCX4kKRy4",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 62,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10163,
+    "mergeKey" : "709901731e8234c6add9def5c364cc18",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-regexp.charclass.keyword.operator",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 285,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10066,
+    "mergeKey" : "5769e8c5bc19c6982459b9ec69743da3",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.xml_external_entity_enabled",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/xxe/CommentsCache.java",
+      "function" : "org.owasp.webgoat.lessons.xxe.CommentsCache::parseXml(CommentsCache, String)Comment",
+      "extra" : "xml_external_entity_enabled_input_factory -- lessons/xxe/CommentsCache.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "input_factory",
+      "mainEventLineNumber" : 98,
+      "mainEventDescription" : "The application parses XML using the `javax.xml.stream.XMLInputFactory` class which has not been configured to prevent expansion of external entities during XML parsing by disabling the XML external entities and DTD features. External entity expansion may cause a server-side request forgery, denial of service, exposure of sensitive data or unwanted server requests.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10162,
+    "mergeKey" : "81c1b90e9f934d44d632f2912bc5e5a6",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-variable.parameter",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 304,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10164,
+    "mergeKey" : "a32336d4bc0a8a03b75ea1a80ca416af",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "defaultToken-string.regexp.charachterclass",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 299,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10068,
+    "mergeKey" : "0d34b3a2d438b1a202b58ebb347fe6db",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.insufficient_asymmetric_key_size",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/cryptography/CryptoUtil.java",
+      "function" : "org.owasp.webgoat.lessons.cryptography.CryptoUtil::generateKeyPair()KeyPair",
+      "extra" : "insufficient_asymmetric_key_size_core_java -- lessons/cryptography/CryptoUtil.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "core_java",
+      "mainEventLineNumber" : 38,
+      "mainEventDescription" : "The application uses an asymmetric algorithm with insufficient key size, making the ciphertext data vulnerable to brute force attacks.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10067,
+    "mergeKey" : "ae091f10b04b07ff9adb0c83037a5e84",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpointTest.java",
+      "function" : "unknown",
+      "extra" : "Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE1MjYxMzE0MTEsImV4cCI6MTUyNjIxNzgxMSwiYWRtaW4iOiJmYWxzZSIsInVzZXIiOiJUb20ifQ.DCoaq9zQkyDH25EcVWKcdbyVfUL4c9D4jRvsqOqvi9iAd4QuqmKcchfbU8FNzeBNF9tLeFXHZLU4yRkq-bjm7Q",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 83,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Bearer token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpointTest.java",
+      "function" : "unknown",
+      "extra" : "Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE1MjYxMzE0MTEsImV4cCI6MTUyNjIxNzgxMSwiYWRtaW4iOiJmYWxzZSIsInVzZXIiOiJUb20ifQ.DCoaq9zQkyDH25EcVWKcdbyVfUL4c9D4jRvsqOqvi9iAd4QuqmKcchfbU8FNzeBNF9tLeFXHZLU4yRkq-bjm7Q",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 125,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Bearer token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10069,
+    "mergeKey" : "f5f72127faa03fe0c602cc645603c69b",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "FORWARD_NULL",
+      "file" : "/src/main/resources/webgoat/static/js/libs/ace.js",
+      "function" : "!ace.js!%IPFE%33:%ANONYMOUS:this.getKeywords",
+      "extra" : "completionKeywords",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "bad_null_value_use",
+      "mainEventLineNumber" : 7631,
+      "mainEventDescription" : "Accessing a property of null-like value \"completionKeywords\".",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10072,
+    "mergeKey" : "5f81be56dbb8d86e0abce2d061cccfea",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/Assignment7.java",
+      "function" : "unknown",
+      "extra" : "createPasswordReset-webgoat",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 87,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10071,
+    "mergeKey" : "fd328a77eb1be40444bdafc0fa11ee62",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/lessons/sqlinjection/html/SqlInjectionAdvanced.html",
+      "function" : "unknown",
+      "extra" : "Check Dave's Password:-Check Password",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 42,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "HTML"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10073,
+    "mergeKey" : "ecd7e18b8794eb65c1d808b2211c97e0",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_untrusted_decode",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpoint.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.JWTRefreshEndpoint::newToken(JWTRefreshEndpoint, String, Map)ResponseEntity",
+      "extra" : "jwt_untrusted_decode_io_jsonwebtoken -- lessons/jwt/JWTRefreshEndpoint.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 137,
+      "mainEventDescription" : "The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10075,
+    "mergeKey" : "8bb4e31639c169d46a54ea8e8656a1e9",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.missing_tls",
+      "file" : "/src/main/resources/application-webwolf.properties",
+      "function" : "unknown",
+      "extra" : "missing_tls_spring_boot_datasource_properties -- main/resources/application-webwolf.properties -- ##Σ-markup - ##Σ-markup - spring.datasource.url",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "spring_boot_datasource_properties",
+      "mainEventLineNumber" : 20,
+      "mainEventDescription" : "The Spring Boot application's data source is configured to disable SSL by setting the `spring.datasource.url` attribute to a value without `useSSL=true`. Thus, sensitive data transmitted over an insecure communication channel could be read and modified by attackers.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Text"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10166,
+    "mergeKey" : "ed39e57afee5baf6f2aadff426eac9a3",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-comment.doc.tag.storage.type",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 25,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10074,
+    "mergeKey" : "c2d287be7f2bef7026fcdd3e5e8e1163",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.weak_hash",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/cryptography/HashingAssignment.java",
+      "function" : "org.owasp.webgoat.lessons.cryptography.HashingAssignment::getMd5(HashingAssignment, HttpServletRequest)String",
+      "extra" : "weak_hash_core_java -- lessons/cryptography/HashingAssignment.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "core_java",
+      "mainEventLineNumber" : 55,
+      "mainEventDescription" : "This application uses a weak algorithm to create a `MessageDigest`, which may lead to collision attacks.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10077,
+    "mergeKey" : "bb2f362794dc759359328aa50c8f98c3",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_no_claims_validation",
+      "file" : "/src/main/java/org/owasp/webgoat/webwolf/jwt/JWTToken.java",
+      "function" : "org.owasp.webgoat.webwolf.jwt.JWTToken::validateSignature(String, String)Boolean",
+      "extra" : "jwt_no_claims_validation_jose4j -- webwolf/jwt/JWTToken.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "jose4j",
+      "mainEventLineNumber" : 124,
+      "mainEventDescription" : "The application invokes `setSkipAllValidators`, `setSkipDefaultAudienceValidation` or `setSkipAllDefaultValidators` to ignore validating JSON Web Token claims. This can be exploited by attackers to reuse an existing JWT signed for other scenarios.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10078,
+    "mergeKey" : "18754dc8ca5f1c796c19501f4a8a1ef4",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_non_expiring_token",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpointTest.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.JWTSecretKeyEndpointTest::solveAssignmentWithLowercase(JWTSecretKeyEndpointTest)Void",
+      "extra" : "jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTSecretKeyEndpointTest.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 82,
+      "mainEventDescription" : "The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10165,
+    "mergeKey" : "5fb790aebffdc5122188aa31aa03826e",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-string.quasi.end",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 380,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10079,
+    "mergeKey" : "e7e0602b86b35794344952bb2d2eb5e9",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.insufficient_asymmetric_key_size",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderJKUEndpointTest.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.claimmisuse.JWTHeaderJKUEndpointTest::generateRsaKey(JWTHeaderJKUEndpointTest)KeyPair",
+      "extra" : "insufficient_asymmetric_key_size_core_java -- jwt/claimmisuse/JWTHeaderJKUEndpointTest.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "core_java",
+      "mainEventLineNumber" : 51,
+      "mainEventDescription" : "The application uses an asymmetric algorithm with insufficient key size, making the ciphertext data vulnerable to brute force attacks.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10080,
+    "mergeKey" : "faeaab18874f6cddcb03ae67311dd96e",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_non_expiring_token",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpointTest.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.JWTVotesEndpointTest::solveAssignment(JWTVotesEndpointTest)Void",
+      "extra" : "jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTVotesEndpointTest.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 63,
+      "mainEventDescription" : "The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10084,
+    "mergeKey" : "3d74c783086ad02299274f93ddfe27a2",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_non_expiring_token",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpointTest.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.JWTVotesEndpointTest::unknownUserShouldSeeGuestView(JWTVotesEndpointTest)Void",
+      "extra" : "jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTVotesEndpointTest.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 246,
+      "mainEventDescription" : "The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10167,
+    "mergeKey" : "c989edb5fd500ef7d1070d05bb59db79",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "DOM_XSS",
+      "file" : "/src/main/resources/lessons/jwt/js/jwt-final.js",
+      "function" : "!jwt-final.js!%SCRIPT",
+      "extra" : "<anonymous>:<event-handler>",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 1,
+      "mainEventDescription" : "Calling at a later point \"<anonymous>\". This call uses \"result\" for sensitive computation.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10081,
+    "mergeKey" : "ffe6f9f91f4e99062d6a89ef4625e462",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "NO_EFFECT",
+      "file" : "/src/main/resources/webgoat/static/js/libs/ace.js",
+      "function" : "!ace.js!%IPFE%42:Folding:this.getFoldLine",
+      "extra" : "",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 9100,
+      "mainEventDescription" : "Reading variable \"i\" and discarding the result. What was this code intended to accomplish?",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10082,
+    "mergeKey" : "2e2e614437ad9b36737eac5aae30cb58",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/container/users/UserValidatorTest.java",
+      "function" : "unknown",
+      "extra" : "setMatchingPassword-test12345",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 51,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10083,
+    "mergeKey" : "8b8162f75471c0f4f67a479a0de667d0",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "NULL_RETURNS",
+      "file" : "/src/main/resources/webgoat/static/js/libs/text.js",
+      "function" : "!text.js!%IPFE:%COND_text.get%1",
+      "extra" : "createXhr,text",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 270,
+      "mainEventDescription" : "Accessing a property of null-like value \"xhr\".",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10086,
+    "mergeKey" : "cb1532dccea4a12d613d58792686c834",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_non_expiring_token",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpoint.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.JWTVotesEndpoint::login(JWTVotesEndpoint, String, HttpServletResponse)Void",
+      "extra" : "jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTVotesEndpoint.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 126,
+      "mainEventDescription" : "The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10087,
+    "mergeKey" : "3152efec8c1d7c5322c49bebb7d177c5",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.weak_password_hash",
+      "file" : "/src/main/java/org/owasp/webgoat/webwolf/WebSecurityConfig.java",
+      "function" : "org.owasp.webgoat.webwolf.WebSecurityConfig::passwordEncoder(WebSecurityConfig)NoOpPasswordEncoder",
+      "extra" : "weak_password_hash_spring_security_code -- webgoat/webwolf/WebSecurityConfig.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "spring_security_code",
+      "mainEventLineNumber" : 103,
+      "mainEventDescription" : "Spring Security framework uses weak hashing algorithm in the PasswordEncoder interface. Weak hashing algorithm does not adequately protect the password. In case of a data leak from a password storage, attackers will easily be able to obtain the original password values.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10088,
+    "mergeKey" : "062da22d5665ed0dfd4bc9a4db4ad434",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_non_expiring_token",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpointTest.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.JWTRefreshEndpointTest::solutionWithAlgNone(JWTRefreshEndpointTest)Void",
+      "extra" : "jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTRefreshEndpointTest.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 102,
+      "mainEventDescription" : "The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10089,
+    "mergeKey" : "53b3cb5156ba53f69c17725a474b8c7f",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/webwolf/jwt/JWTTokenTest.java",
+      "function" : "unknown",
+      "extra" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXN0IjoidGVzdCJ9.axNp9BkswwK_YRF2URJ5P1UejQNYZbK4qYcMnkusg6I",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 30,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: JWT token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10090,
+    "mergeKey" : "c9d105172f60ea3dc1058f186ffb4601",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "NULL_RETURNS",
+      "file" : "/src/main/resources/webgoat/static/js/libs/ace.js",
+      "function" : "!ace.js!%IPFE%42:Folding:this.getCommentFoldRange",
+      "extra" : "iterator,stepBackward",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 9502,
+      "mainEventDescription" : "Accessing a property of null-like value \"token\".",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10168,
+    "mergeKey" : "aeb9d91043271057374b76196a60faa7",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-support.function",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 220,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10092,
+    "mergeKey" : "6507187ad7cfaec18b74876a5ee5dee9",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.weak_password_hash",
+      "file" : "/src/main/java/org/owasp/webgoat/container/WebSecurityConfig.java",
+      "function" : "org.owasp.webgoat.container.WebSecurityConfig::passwordEncoder(WebSecurityConfig)NoOpPasswordEncoder",
+      "extra" : "weak_password_hash_spring_security_code -- webgoat/container/WebSecurityConfig.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "spring_security_code",
+      "mainEventLineNumber" : 112,
+      "mainEventDescription" : "Spring Security framework uses weak hashing algorithm in the PasswordEncoder interface. Weak hashing algorithm does not adequately protect the password. In case of a data leak from a password storage, attackers will easily be able to obtain the original password values.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10091,
+    "mergeKey" : "9c4b428eedb20f1f625deed3e629fee6",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "NO_EFFECT",
+      "file" : "/src/main/resources/webgoat/static/js/libs/ace.js",
+      "function" : "!ace.js!%IPFE%44:%ANONYMOUS:this.$updateInternalDataOnChange",
+      "extra" : "",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 10897,
+      "mainEventDescription" : "Reading variable \"idx\" and discarding the result. What was this code intended to accomplish?",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    }, {
+      "checker" : "NO_EFFECT",
+      "file" : "/src/main/resources/webgoat/static/js/libs/ace.js",
+      "function" : "!ace.js!%IPFE%44:%ANONYMOUS:this.$updateInternalDataOnChange",
+      "extra" : "",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 10929,
+      "mainEventDescription" : "Reading variable \"idx\" and discarding the result. What was this code intended to accomplish?",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10094,
+    "mergeKey" : "bd270b1da7b22d2173cf8ddfc60b511d",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "NO_EFFECT",
+      "file" : "/src/main/resources/webgoat/static/plugins/bootstrap-slider/js/bootstrap-slider.js",
+      "function" : "!bootstrap-slider.js!%IIFE:Slider.prototype.mouseup",
+      "extra" : "",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 290,
+      "mainEventDescription" : "Accessing data with \"this.element\" and discarding the result. What was this code intended to accomplish?",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10095,
+    "mergeKey" : "e3842d10365e82c8c5909562e94ea301",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderKIDEndpointTest.java",
+      "function" : "unknown",
+      "extra" : "eyJraWQiOiJ3ZWJnb2F0X2tleSIsImFsZyI6IkhTNTEyIn0.eyJhdWQiOiJ3ZWJnb2F0Lm9yZyIsImVtYWlsIjoiamVycnlAd2ViZ29hdC5jb20iLCJ1c2VybmFtZSI6IkplcnJ5In0.xBc5FFwaOcuxjdr_VJ16n8Jb7vScuaZulNTl66F2MWF1aBe47QsUosvbjWGORNcMPiPNwnMu1Yb0WZVNrp2ZXA",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 24,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: JWT token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10169,
+    "mergeKey" : "9a5d989725432c75ce0f046461712f2b",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-support.constant",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 226,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10097,
+    "mergeKey" : "ba6ef2d22c1e246930d7f4a84d7b7766",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_untrusted_decode",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpoint.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.JWTVotesEndpoint::getVotes(JWTVotesEndpoint, String)MappingJacksonValue",
+      "extra" : "jwt_untrusted_decode_io_jsonwebtoken -- lessons/jwt/JWTVotesEndpoint.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 155,
+      "mainEventDescription" : "The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10098,
+    "mergeKey" : "0658347b8798ee4d22b8ea40e1707d12",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_non_expiring_token",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpointTest.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.JWTVotesEndpointTest::solveAssignmentWithBoolean(JWTVotesEndpointTest)Void",
+      "extra" : "jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTVotesEndpointTest.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 81,
+      "mainEventDescription" : "The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10099,
+    "mergeKey" : "6ff007d70ef3070558aa94d3e88a4124",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.missing_tls",
+      "file" : "/src/test/resources/application-webwolf.properties",
+      "function" : "unknown",
+      "extra" : "missing_tls_spring_boot_datasource_properties -- test/resources/application-webwolf.properties -- ##Σ-markup - ##Σ-markup - spring.datasource.url",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "spring_boot_datasource_properties",
+      "mainEventLineNumber" : 3,
+      "mainEventDescription" : "The Spring Boot application's data source is configured to disable SSL by setting the `spring.datasource.url` attribute to a value without `useSSL=true`. Thus, sensitive data transmitted over an insecure communication channel could be read and modified by attackers.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Text"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10173,
+    "mergeKey" : "8e02decdc2927bdb871e76c5de16982f",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-constant.numeric",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 870,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-constant.numeric",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 111,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-constant.numeric",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 867,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-constant.numeric",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 108,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10101,
+    "mergeKey" : "1049fa7bf507d884ad083649d5d0f7e2",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "NULL_RETURNS",
+      "file" : "/src/main/resources/webgoat/static/js/libs/ace.js",
+      "function" : "!ace.js!%IPFE%50:%ANONYMOUS:this.$highlightTags:%IPFE",
+      "extra" : "iterator,stepBackward",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 13415,
+      "mainEventDescription" : "Accessing a property of null-like value \"prevToken\".",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    }, {
+      "checker" : "NULL_RETURNS",
+      "file" : "/src/main/resources/webgoat/static/js/libs/ace.js",
+      "function" : "!ace.js!%IPFE%50:%ANONYMOUS:this.$highlightTags:%IPFE",
+      "extra" : "iterator,stepBackward",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 13435,
+      "mainEventDescription" : "Accessing a property of null-like value \"prevToken\".",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10100,
+    "mergeKey" : "8302c989de218d6f21aac57d61bc39d2",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.missing_tls",
+      "file" : "/src/main/resources/application-webgoat.properties",
+      "function" : "unknown",
+      "extra" : "missing_tls_spring_boot_datasource_properties -- main/resources/application-webgoat.properties -- ##Σ-markup - ##Σ-markup - spring.datasource.url",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "spring_boot_datasource_properties",
+      "mainEventLineNumber" : 19,
+      "mainEventDescription" : "The Spring Boot application's data source is configured to disable SSL by setting the `spring.datasource.url` attribute to a value without `useSSL=true`. Thus, sensitive data transmitted over an insecure communication channel could be read and modified by attackers.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Text"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10102,
+    "mergeKey" : "a2f2c8f75eddb19a39c717a82699d1d2",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/missingac/MissingFunctionAC.java",
+      "function" : "unknown",
+      "extra" : "PASSWORD_SALT_ADMIN-DeliberatelyInsecure1235",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 33,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10104,
+    "mergeKey" : "030ead7ecff40715fcf6da4a7353a31c",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "NO_EFFECT",
+      "file" : "/src/main/resources/webgoat/static/js/libs/ace.js",
+      "function" : "!ace.js!%IPFE%44:%ANONYMOUS:this.$computeWrapSplits",
+      "extra" : "",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 11080,
+      "mainEventDescription" : "Reading variable \"split\" and discarding the result. What was this code intended to accomplish?",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    }, {
+      "checker" : "NO_EFFECT",
+      "file" : "/src/main/resources/webgoat/static/js/libs/ace.js",
+      "function" : "!ace.js!%IPFE%44:%ANONYMOUS:this.$computeWrapSplits",
+      "extra" : "",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 11090,
+      "mainEventDescription" : "Reading variable \"split\" and discarding the result. What was this code intended to accomplish?",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10103,
+    "mergeKey" : "cd84c5afc332e65ca6e916910bc93e9f",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_non_expiring_token",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpointTest.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.JWTSecretKeyEndpointTest::incorrectToken(JWTSecretKeyEndpointTest)Void",
+      "extra" : "jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTSecretKeyEndpointTest.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 122,
+      "mainEventDescription" : "The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10105,
+    "mergeKey" : "7ac002c233cce846c04ddba287dedfd5",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.verbose_error_message",
+      "file" : "/src/main/resources/application-webgoat.properties",
+      "function" : "unknown",
+      "extra" : "verbose_error_message_spring_boot_stacktrace_properties -- main/resources/application-webgoat.properties -- ##Σ-markup - ##Σ-markup - server.error.include-stacktrace",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "spring_boot_stacktrace_properties",
+      "mainEventLineNumber" : 1,
+      "mainEventDescription" : "The Spring Boot main application server is configured to allow stack traces to be displayed in an error page. The stack traces might contain sensitive information and should not be displayed.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Text"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10170,
+    "mergeKey" : "882f1776936140e5c6e4c23aaf91d617",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-constant.language.boolean",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 873,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10110,
+    "mergeKey" : "1b8b8f5e63ac8a92503dccd5ace1067a",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/securepasswords/SecurePasswords.java",
+      "function" : "unknown",
+      "extra" : "org.owasp.webgoat.lessons.securepasswords.SecurePasswords::getTitle-secure-passwords.title",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 43,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10174,
+    "mergeKey" : "11e1366b63a07f23d9f9155695a60764",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.container_running_as_root",
+      "file" : "/Dockerfile_desktop",
+      "function" : "unknown",
+      "extra" : "container_running_as_root_dockerfile -- //Dockerfile_desktop -- ##Σ-markup - FROM",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "dockerfile",
+      "mainEventLineNumber" : 1,
+      "mainEventDescription" : "The Docker container is configured to run as the root user.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Text"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10111,
+    "mergeKey" : "69bef18e0b931890c3f11f1a66564d0d",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/container/users/UserValidatorTest.java",
+      "function" : "unknown",
+      "extra" : "setPassword-test12345",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 37,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/container/users/UserValidatorTest.java",
+      "function" : "unknown",
+      "extra" : "setPassword-test12345",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 50,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10112,
+    "mergeKey" : "6db7679d7b2681675a5aa773112e8309",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/deserialization/DeserializeTest.java",
+      "function" : "unknown",
+      "extra" : "token-rO0ABXNyADFvcmcuZHVtbXkuaW5zZWN1cmUuZnJhbWV3b3JrLlZ1bG5lcmFibGVUYXNrSG9sZGVyAAAAAAAAAAECAANMABZyZXF1ZXN0ZWRFeGVjdXRpb25UaW1ldAAZTGphdmEvdGltZS9Mb2NhbERhdGVUaW1lO0wACnRhc2tBY3Rpb250ABJMamF2YS9sYW5nL1N0cmluZztMAAh0YXNrTmFtZXEAfgACeHBzcgANamF2YS50aW1lLlNlcpVdhLobIkiyDAAAeHB3DgUAAAfjCR4GIQgMLRSoeHQACmVjaG8gaGVsbG90AAhzYXlIZWxsbw",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 71,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10109,
+    "mergeKey" : "627b1a734680452c222872f3e5413ead",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "NO_EFFECT",
+      "file" : "/src/main/resources/webgoat/static/js/libs/ace.js",
+      "function" : "!ace.js!%IPFE%39:%ANONYMOUS:this.addRemoveChars",
+      "extra" : "",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 8534,
+      "mainEventDescription" : "Reading variable \"i\" and discarding the result. What was this code intended to accomplish?",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10171,
+    "mergeKey" : "bc261a89560d6e2ec7b9fd8811c8827c",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-constant.language.escape",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 320,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-constant.language.escape",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 288,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-constant.language.escape",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 373,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-constant.language.escape",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 292,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-constant.language.escape",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 266,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-constant.language.escape",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 272,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-constant.language.escape",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 336,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10113,
+    "mergeKey" : "c641d4b272da4157e15701bcdb17dcc4",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/container/users/UserValidatorTest.java",
+      "function" : "unknown",
+      "extra" : "setMatchingPassword-test1234",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 26,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/container/users/UserValidatorTest.java",
+      "function" : "unknown",
+      "extra" : "setMatchingPassword-test1234",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 38,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10114,
+    "mergeKey" : "6f90ac38ceed19f5cd8cfd89f7e48f0d",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_non_expiring_token",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderKIDEndpointTest.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.claimmisuse.JWTHeaderKIDEndpointTest::solveAssignment(JWTHeaderKIDEndpointTest)Void",
+      "extra" : "jwt_non_expiring_token_io_jsonwebtoken -- jwt/claimmisuse/JWTHeaderKIDEndpointTest.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 38,
+      "mainEventDescription" : "The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10172,
+    "mergeKey" : "666ec84ae3452b15f8dab62fce59744f",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-constant.language.delimiter",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 269,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10116,
+    "mergeKey" : "0d2ca5f4c17ffd9c422d9223dbd91ca0",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_untrusted_decode",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/TokenTest.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.TokenTest::test(TokenTest)Void",
+      "extra" : "jwt_untrusted_decode_io_jsonwebtoken -- lessons/jwt/TokenTest.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 55,
+      "mainEventDescription" : "The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    }, {
+      "checker" : "SIGMA.jwt_untrusted_decode",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/TokenTest.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.TokenTest::test(TokenTest)Void",
+      "extra" : "jwt_untrusted_decode_io_jsonwebtoken -- lessons/jwt/TokenTest.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 57,
+      "mainEventDescription" : "The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10175,
+    "mergeKey" : "0e8f63a3f2c37fae357f7a90141366ce",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-support.function.dom",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 223,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10119,
+    "mergeKey" : "e283786e070b138826d5b09bb0f0adce",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_non_expiring_token",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/claimmisuse/JWTHeaderJKUEndpointTest.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.claimmisuse.JWTHeaderJKUEndpointTest::createTokenAndSignIt(JWTHeaderJKUEndpointTest)String",
+      "extra" : "jwt_non_expiring_token_io_jsonwebtoken -- jwt/claimmisuse/JWTHeaderJKUEndpointTest.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 81,
+      "mainEventDescription" : "The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10120,
+    "mergeKey" : "b1f0f678ff2c157864753c352a682a1f",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/Assignment7.java",
+      "function" : "unknown",
+      "extra" : "ADMIN_PASSWORD_LINK-375afe1104f4a487a73823c50a9292a2",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 34,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10122,
+    "mergeKey" : "696246a653193fe25bb2451d2c8589ec",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.unrestricted_postmessage_target",
+      "file" : "/src/main/resources/webgoat/static/js/libs/ace.js",
+      "function" : "!<placeholder>!%ANONYMOUS:%ANONYMOUS(Unknown, Unknown)Unknown",
+      "extra" : "unrestricted_postmessage_target_javascript_window -- js/libs/ace.js",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "javascript_window",
+      "mainEventLineNumber" : 1740,
+      "mainEventDescription" : "The application sends a cross-document message by calling function `postMessage` without restricting the `targetOrigin` by passing `\"*\"` as the second argument. A malicious site can intercept the message by changing the location of the target window.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10123,
+    "mergeKey" : "351ebeba50aab39ee8e0aaaa1d2c8fff",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/lessons/jwt/html/JWT.html",
+      "function" : "unknown",
+      "extra" : "JWT/kid/delete?token=eyJ0eXAiOiJKV1QiLCJraWQiOiJ3ZWJnb2F0X2tleSIsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJXZWJHb2F0IFRva2VuIEJ1aWxkZXIiLCJpYXQiOjE1MjQyMTA5MDQsImV4cCI6MTYxODkwNTMwNCwiYXVkIjoid2ViZ29hdC5vcmciLCJzdWIiOiJqZXJyeUB3ZWJnb2F0LmNvbSIsInVzZXJuYW1lIjoiSmVycnkiLCJFbWFpbCI6ImplcnJ5QHdlYmdvYXQuY29tIiwiUm9sZSI6WyJDYXQiXX0.CgZ27DzgVW8gzc0n6izOU638uUCi6UhiOJKYzoEZGE8",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 388,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: JWT token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "HTML"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10125,
+    "mergeKey" : "0a521e15e8ead5d64fa0e8cfe8e7a2c2",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.verbose_error_message",
+      "file" : "/src/main/resources/application-webwolf.properties",
+      "function" : "unknown",
+      "extra" : "verbose_error_message_spring_boot_stacktrace_properties -- main/resources/application-webwolf.properties -- ##Σ-markup - ##Σ-markup - server.error.include-stacktrace",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "spring_boot_stacktrace_properties",
+      "mainEventLineNumber" : 1,
+      "mainEventDescription" : "The Spring Boot main application server is configured to allow stack traces to be displayed in an error page. The stack traces might contain sensitive information and should not be displayed.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Text"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10179,
+    "mergeKey" : "abea0a7f54273d7703cfdfca2e90eb27",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "UNRESTRICTED_MESSAGE_TARGET",
+      "file" : "/src/main/resources/webgoat/static/js/libs/ace.js",
+      "function" : "!ace.js!%IPFE%7:%COND_exports.nextTick",
+      "extra" : "messageName",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 1740,
+      "mainEventDescription" : "Calling the function \"win.postMessage\" with a \"targetOrigin\" argument of \"\"*\"\", rather than specifying an exact URI value.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10132,
+    "mergeKey" : "074248182cc13fd68eb950a942ee7417",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_ignored_expiration_time",
+      "file" : "/src/main/java/org/owasp/webgoat/webwolf/jwt/JWTToken.java",
+      "function" : "org.owasp.webgoat.webwolf.jwt.JWTToken::validateSignature(String, String)Boolean",
+      "extra" : "jwt_ignored_expiration_time_jose4j -- webwolf/jwt/JWTToken.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "jose4j",
+      "mainEventLineNumber" : 124,
+      "mainEventDescription" : "The instance of `JwtConsumerBuilder` ignores the expiration time by default, unless the `setRequireExpirationTime()` function is called explicitly.\nIgnoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10130,
+    "mergeKey" : "8b90e071524e52c0b25eef5201b09e1e",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/spoofcookie/SpoofCookieAssignmentTest.java",
+      "function" : "unknown",
+      "extra" : "password-webgoat",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 91,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10126,
+    "mergeKey" : "90a56c5cab8d4e42b45208fcd5f23ae2",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/lessons/jwt/html/JWT.html",
+      "function" : "unknown",
+      "extra" : "JWT/final/delete?token=eyJ0eXAiOiJKV1QiLCJqa3UiOiJodHRwczovL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tL3dlYmdvYXQvLndlbGwta25vd24vandrcy5qc29uIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJXZWJHb2F0IFRva2VuIEJ1aWxkZXIiLCJpYXQiOjE1MjQyMTA5MDQsImV4cCI6MTYxODkwNTMwNCwiYXVkIjoid2ViZ29hdC5vcmciLCJzdWIiOiJqZXJyeUB3ZWJnb2F0LmNvbSIsInVzZXJuYW1lIjoiSmVycnkiLCJFbWFpbCI6ImplcnJ5QHdlYmdvYXQuY29tIiwiUm9sZSI6WyJDYXQiXX0.SabvRaYSCW7xI0ueca19TL1e66cJIJaxRiydK2G5lgFMIbL5gQQjE6022HEha9HcprqFXyHbtXrQWRXAp6Gjaf5zs8LUMBMARWjEr8TS43ihguarmLLmvBCoqjiZY39o4EcEjEH9xAoyIYR_Trh7kXn6JVU-8MM76l9IOcYIJ9c8LqT1ERNmbCqtI4PP0tdqCy99nHhqlxSCVXaGDF0jMHV5kjCDSHNYib9riy9xZ63Sztify-bwPqRvxmaShPYtG4BBM_wOGlg-BYTTuws-6yISMfTB5U1WBDwLr6dLU123TGO26wCVBgTKbA0KKG94-ToOcneWLOTEacEfQQOlIQ",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 322,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: JWT token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "HTML"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10127,
+    "mergeKey" : "6c15e0c296a95ae0334e47f0ea63eec8",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpointTest.java",
+      "function" : "unknown",
+      "extra" : "accessTokenTom-eyJhbGciOiJIUzUxMiJ9.eyJpLXQiOjE1MjYxMzE0MTEsImV4cCI6MTUyNjIxNzgxMSwiYWRtaW4iOiJmYWxzZSIsInVzZXIiOiJUb20ifQ.DCoaq9zQkyDH25EcVWKcdbyVfUL4c9D4jRvsqOqvi9iAd4QuqmKcchfbU8FNzeBNF9tLeFXHZLU4yRkq-bjm7Q",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 133,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Access token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10176,
+    "mergeKey" : "36d19523701673e6f88a55135e1b4f82",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-punctuation.operator",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 178,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-punctuation.operator",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 190,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-punctuation.operator",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 310,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-punctuation.operator",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 307,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-punctuation.operator",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 217,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-punctuation.operator",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 896,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10177,
+    "mergeKey" : "61659c540fea87ada7f5bb66ff8501c8",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-regexp.keyword.operator",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 256,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10128,
+    "mergeKey" : "df67a8a3767df7272b575f95d00f4735",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/container/users/UserValidatorTest.java",
+      "function" : "unknown",
+      "extra" : "setPassword-test1234",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 25,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10129,
+    "mergeKey" : "184702ab5ee0bdda3f450353f0271b27",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/webwolf/user/UserServiceTest.java",
+      "function" : "unknown",
+      "extra" : "password-123",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 49,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10131,
+    "mergeKey" : "bd25c7d9e96b814df5e4df21bf1f9a2b",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpointTest.java",
+      "function" : "unknown",
+      "extra" : "accessTokenTom-eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE1MjYxMzE0MTEsImV4cCI6MTUyNjIxNzgxMSwiYWRtaW4iOiJmYWxzZSIsInVzZXIiOiJUb20ifQ.DCoaq9zQkyDH25EcVWKcdbyVfUL4c9D4jRvsqOqvi9iAd4QuqmKcchfbU8FNzeBNF9tLeFXHZLU4yRkq-bjm7Q",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 121,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Access token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpointTest.java",
+      "function" : "unknown",
+      "extra" : "accessTokenTom-eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE1MjYxMzE0MTEsImV4cCI6MTUyNjIxNzgxMSwiYWRtaW4iOiJmYWxzZSIsInVzZXIiOiJUb20ifQ.DCoaq9zQkyDH25EcVWKcdbyVfUL4c9D4jRvsqOqvi9iAd4QuqmKcchfbU8FNzeBNF9tLeFXHZLU4yRkq-bjm7Q",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 75,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Access token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10134,
+    "mergeKey" : "e5b118343b9f9515c479049d1b854389",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_untrusted_decode",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpoint.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.JWTVotesEndpoint::resetVotes(JWTVotesEndpoint, String)AttackResult",
+      "extra" : "jwt_untrusted_decode_io_jsonwebtoken -- lessons/jwt/JWTVotesEndpoint.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 203,
+      "mainEventDescription" : "The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10133,
+    "mergeKey" : "4601b1a02df9ee1da12e10c8b04e7e36",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/missingac/MissingFunctionAC.java",
+      "function" : "unknown",
+      "extra" : "PASSWORD_SALT_SIMPLE-DeliberatelyInsecure1234",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 32,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10180,
+    "mergeKey" : "9a31b0d50b029777ab7bcf4485ac7da4",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.insufficient_asymmetric_key_size",
+      "file" : "/src/it/java/org/owasp/webgoat/JWTLessonIntegrationTest.java",
+      "function" : "org.owasp.webgoat.JWTLessonIntegrationTest::deleteTomThroughJkuClaim(JWTLessonIntegrationTest)Void",
+      "extra" : "insufficient_asymmetric_key_size_core_java -- owasp/webgoat/JWTLessonIntegrationTest.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "core_java",
+      "mainEventLineNumber" : 251,
+      "mainEventDescription" : "The application uses an asymmetric algorithm with insufficient key size, making the ciphertext data vulnerable to brute force attacks.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10135,
+    "mergeKey" : "e181497481c3812971fa9b9b1445af29",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "COPY_PASTE_ERROR",
+      "file" : "/src/main/resources/webgoat/static/js/libs/ace.js",
+      "function" : "!ace.js!%IPFE%31:CstyleBehaviour:%IPFE%6",
+      "extra" : "column",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 7159,
+      "mainEventDescription" : "\"column\" in \"cursor.column\" looks like a copy-paste error.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10136,
+    "mergeKey" : "6631381ba228504d24f997ef6000ddb6",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/cryptography/XOREncodingAssignment.java",
+      "function" : "unknown",
+      "extra" : "answer_pwd1-databasepassword",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 40,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10139,
+    "mergeKey" : "3ccfb6c68a7a6f182616962bbb2557b4",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "NO_EFFECT",
+      "file" : "/src/main/resources/webgoat/static/js/libs/ace.js",
+      "function" : "!ace.js!%IPFE%42:Folding:this.getNextFoldLine",
+      "extra" : "",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 9117,
+      "mainEventDescription" : "Reading variable \"i\" and discarding the result. What was this code intended to accomplish?",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10140,
+    "mergeKey" : "6a841abf406ed14b767b9dafa56c0ef3",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/lessons/pathtraversal/html/PathTraversal.html",
+      "function" : "unknown",
+      "extra" : "password-test",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 50,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "HTML"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/lessons/pathtraversal/html/PathTraversal.html",
+      "function" : "unknown",
+      "extra" : "password-test",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 104,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "HTML"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/lessons/pathtraversal/html/PathTraversal.html",
+      "function" : "unknown",
+      "extra" : "password-test",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 161,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "HTML"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/lessons/pathtraversal/html/PathTraversal.html",
+      "function" : "unknown",
+      "extra" : "password-test",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 257,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "HTML"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10178,
+    "mergeKey" : "5fea1ba9565a13bd22b4c4c4d196e2c3",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-paren.quasi.start",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 376,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-paren.quasi.start",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 435,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10137,
+    "mergeKey" : "33136124b92b462b650fa119f11aa8d6",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_untrusted_decode",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpoint.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.JWTVotesEndpoint::vote(JWTVotesEndpoint, String, String)ResponseEntity",
+      "extra" : "jwt_untrusted_decode_io_jsonwebtoken -- lessons/jwt/JWTVotesEndpoint.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 180,
+      "mainEventDescription" : "The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10138,
+    "mergeKey" : "1d889c3ac92af871894523bc0edee769",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "NO_EFFECT",
+      "file" : "/src/main/resources/webgoat/static/js/libs/ace.js",
+      "function" : "!ace.js!%IPFE%1:%COND_%IIFE",
+      "extra" : "",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 325,
+      "mainEventDescription" : "Discarding the result of operator \"==\" in \"lengthBefore + 1 == array.length\". What was this code intended to accomplish?",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10141,
+    "mergeKey" : "ae29f17c7f95ba8b57bc3c8b3bc4f4b2",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "NO_EFFECT",
+      "file" : "/src/main/resources/webgoat/static/js/goatApp/view/PaginationControlView.js",
+      "function" : "!PaginationControlView.js!%IPFE:%IPOL.incrementPageView",
+      "extra" : "",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 147,
+      "mainEventDescription" : "Accessing data with \"this.showPrevPageButton\" and discarding the result. What was this code intended to accomplish?",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10142,
+    "mergeKey" : "823b12d6460363daf782d633a63b8eb9",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_non_expiring_token",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpointTest.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.JWTVotesEndpointTest::unknownUserWithValidTokenShouldNotBeAbleToVote(JWTVotesEndpointTest)Void",
+      "extra" : "jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTVotesEndpointTest.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 228,
+      "mainEventDescription" : "The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10143,
+    "mergeKey" : "fd360307efe295b51f384057084ab245",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "DEADCODE",
+      "file" : "/src/main/resources/webgoat/static/js/libs/ace.js",
+      "function" : "!ace.js!%IIFE",
+      "extra" : "ACE_NAMESPACE",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 45,
+      "mainEventDescription" : "Execution cannot reach the expression \"typeof requirejs !== \"undefined\"\" inside this statement: \"if (!ACE_NAMESPACE && (type...\".",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10145,
+    "mergeKey" : "19f4d16de4f6a254f5389bf4facab9f8",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_non_expiring_token",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/JWTSecretKeyEndpointTest.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.JWTSecretKeyEndpointTest::oneOfClaimIsMissingShouldNotSolveAssignment(JWTSecretKeyEndpointTest)Void",
+      "extra" : "jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTSecretKeyEndpointTest.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 94,
+      "mainEventDescription" : "The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10144,
+    "mergeKey" : "20718601991793cb84132012006cebbf",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_non_expiring_token",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/TokenTest.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.TokenTest::test(TokenTest)Void",
+      "extra" : "jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/TokenTest.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 48,
+      "mainEventDescription" : "The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10182,
+    "mergeKey" : "cffcafd2f53866294908662eac2ce8e9",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_untrusted_decode",
+      "file" : "/src/it/java/org/owasp/webgoat/JWTLessonIntegrationTest.java",
+      "function" : "org.owasp.webgoat.JWTLessonIntegrationTest::getSecretToken(JWTLessonIntegrationTest, String)String",
+      "extra" : "jwt_untrusted_decode_io_jsonwebtoken -- owasp/webgoat/JWTLessonIntegrationTest.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 75,
+      "mainEventDescription" : "The application uses the `io.jsonwebtoken.JwtParser` package's `parse()`, `parsePlaintextJwt()`, or `parseClaimsJwt()` method to parse a JWT without first verifying the token's signature, allowing an attacker to forge the token claims and perform attacks such as impersonating other users.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10146,
+    "mergeKey" : "9a8417732cee7ee050abd85f43edf105",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_ignored_start_time",
+      "file" : "/src/main/java/org/owasp/webgoat/webwolf/jwt/JWTToken.java",
+      "function" : "org.owasp.webgoat.webwolf.jwt.JWTToken::validateSignature(String, String)Boolean",
+      "extra" : "jwt_ignored_start_time_jose4j -- webwolf/jwt/JWTToken.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "jose4j",
+      "mainEventLineNumber" : 124,
+      "mainEventDescription" : "The instance of `JwtConsumerBuilder` ignores the not-before time by default. When the verified JWT contains the `nbd` field, the `setRequireNotBefore()` method should be invoked explicitly to verify the token's not-before time.\nIgnoring the not-before setting of a JSON web token means it may become valid before the particular point in time, and thus the attacker may use the invalid token to access resource.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10148,
+    "mergeKey" : "0be0e40b88c5855b88b36e58ef9010c2",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "NO_EFFECT",
+      "file" : "/src/main/resources/webgoat/static/js/libs/ace.js",
+      "function" : "!ace.js!%IPFE%51:$updateMarkers",
+      "extra" : "",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 15272,
+      "mainEventDescription" : "Discarding the result of operator \"==\" in \"point.bias == -1\". What was this code intended to accomplish?",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10150,
+    "mergeKey" : "fde673563ae31b9325d13ec4b7a23e85",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/passwordreset/ResetLinkAssignment.java",
+      "function" : "unknown",
+      "extra" : "PASSWORD_TOM_9-somethingVeryRandomWhichNoOneWillEverTypeInAsPasswordForTom",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 62,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10151,
+    "mergeKey" : "5dcf17ec2d69828fdd3d5cca90692431",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.jwt_non_expiring_token",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpoint.java",
+      "function" : "org.owasp.webgoat.lessons.jwt.JWTRefreshEndpoint::createNewTokens(JWTRefreshEndpoint, String)Map",
+      "extra" : "jwt_non_expiring_token_io_jsonwebtoken -- lessons/jwt/JWTRefreshEndpoint.java",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "io_jsonwebtoken",
+      "mainEventLineNumber" : 86,
+      "mainEventDescription" : "The instance of `JwtBuilder` doesn't set the expiration time when generating the token. Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen the token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10152,
+    "mergeKey" : "00850bee6e2c0c58ccc3c31fba9d1b4b",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "MISSING_BREAK",
+      "file" : "/src/main/resources/webgoat/static/js/libs/ace.js",
+      "function" : "!ace.js!%IPFE%29:%ANONYMOUS:this.add",
+      "extra" : "$behaviours,this",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 6785,
+      "mainEventDescription" : "The case for \"this.$behaviours\" is not terminated by a \"break\" statement.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10155,
+    "mergeKey" : "a6b991b906e9f18b761dffab7e1dd79c",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/test/java/org/owasp/webgoat/lessons/jwt/JWTRefreshEndpointTest.java",
+      "function" : "unknown",
+      "extra" : "Bearer eyJhbGciOiJIUzUxMiJ9.eyJpLXQiOjE1MjYxMzE0MTEsImV4cCI6MTUyNjIxNzgxMSwiYWRtaW4iOiJmYWxzZSIsInVzZXIiOiJUb20ifQ.DCoaq9zQkyDH25EcVWKcdbyVfUL4c9D4jRvsqOqvi9iAd4QuqmKcchfbU8FNzeBNF9tLeFXHZLU4yRkq-bjm7Q",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 137,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Bearer token.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10154,
+    "mergeKey" : "8abf5fae468e9bbe4ff90995b8f1a71e",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "NO_EFFECT",
+      "file" : "/src/main/resources/webgoat/static/js/libs/ace.js",
+      "function" : "!ace.js!%IPFE%20",
+      "extra" : "",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 4440,
+      "mainEventDescription" : "Discarding the programmer-written value \"\"no use strict\"\". What was this code intended to accomplish?",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    }, {
+      "checker" : "NO_EFFECT",
+      "file" : "/src/main/resources/webgoat/static/js/libs/ace.js",
+      "function" : "!ace.js!%IPFE%19",
+      "extra" : "",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 4315,
+      "mainEventDescription" : "Discarding the programmer-written value \"\"no use strict\"\". What was this code intended to accomplish?",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10183,
+    "mergeKey" : "b6c8949c24d6541a58b547b1afbe1a21",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/it/java/org/owasp/webgoat/PasswordResetLessonIntegrationTest.java",
+      "function" : "unknown",
+      "extra" : "org.owasp.webgoat.PasswordResetLessonIntegrationTest::clickForgotEmailLink-tom@webgoat-cloud.org",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 68,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10157,
+    "mergeKey" : "c3e4c7540165f38bd6bc41c4a7177596",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionLesson6b.java",
+      "function" : "unknown",
+      "extra" : "password-dave",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 58,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10158,
+    "mergeKey" : "3677b377252a809599df6ebac52297a5",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/lessons/jwt/js/jwt-refresh.js",
+      "function" : "unknown",
+      "extra" : "password-bm5nhSkxCXZkKRy4",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 10,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10159,
+    "mergeKey" : "8c7eaa80260605ade001c3d4fd1c8bba",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-20T11:38:39.469Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/java/org/owasp/webgoat/lessons/passwordreset/PasswordReset.java",
+      "function" : "unknown",
+      "extra" : "org.owasp.webgoat.lessons.passwordreset.PasswordReset::getTitle-password-reset.title",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 38,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "Java"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10181,
+    "mergeKey" : "84e992228e44ac620b6ca4fcadb9255d",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2024-09-30T15:22:37.324Z",
+    "occurrences" : [ {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-keyword.operator",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 909,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    }, {
+      "checker" : "SIGMA.hardcoded_secret",
+      "file" : "/src/main/resources/webgoat/static/js/libs/mode-java.js",
+      "function" : "unknown",
+      "extra" : "token-keyword.operator",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "pattern",
+      "mainEventLineNumber" : 186,
+      "mainEventDescription" : "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Token (generic).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null,
+      "score" : null,
+      "language" : "JavaScript"
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : {
+      "cvss" : null
+    },
+    "ownerLdapServerName" : null
+  } ]
+}

@@ -1,0 +1,40 @@
+C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-analyze --dir C:\Temp\test\WebGoat-main\idir --strip-path C:\Temp\test\WebGoat-main --ticker-mode no-spin --webapp-security --enable-scan-transparency-data 
+WARNING: Cannot run SpotBugs analysis because there are no compiler outputs
+in the emit. To fix this, refer to the documentation for cov-emit-java. To
+work around this problem by disabling SpotBugs, use --disable-spotbugs.
+
+Analysis summary report:
+------------------------
+Files analyzed                 : 571 Total
+    HTML                       : 44
+    Java                       : 355
+    JavaScript                 : 108
+    Text                       : 64
+Total LoC input to cov-analyze : 45667
+Functions analyzed             : 4572
+Paths analyzed                 : 47924
+Time taken by analysis         : 00:02:08
+Defect occurrences found       : 145 Total
+                                   1 COPY_PASTE_ERROR
+                                   3 DEADCODE
+                                   1 DOM_XSS
+                                   1 FORWARD_NULL
+                                   2 MISSING_BREAK
+                                  13 NO_EFFECT
+                                   4 NULL_RETURNS
+                                   1 SIGMA.container_running_as_root
+                                   1 SIGMA.excessive_session_lifetime
+                                  76 SIGMA.hardcoded_secret
+                                   3 SIGMA.insufficient_asymmetric_key_size
+                                   1 SIGMA.jwt_ignored_expiration_time
+                                   1 SIGMA.jwt_ignored_start_time
+                                   1 SIGMA.jwt_no_claims_validation
+                                  16 SIGMA.jwt_non_expiring_token
+                                   8 SIGMA.jwt_untrusted_decode
+                                   4 SIGMA.missing_tls
+                                   1 SIGMA.unrestricted_postmessage_target
+                                   2 SIGMA.verbose_error_message
+                                   1 SIGMA.weak_hash
+                                   2 SIGMA.weak_password_hash
+                                   1 SIGMA.xml_external_entity_enabled
+                                   1 UNRESTRICTED_MESSAGE_TARGET

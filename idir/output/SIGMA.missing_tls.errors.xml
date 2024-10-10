@@ -1,0 +1,184 @@
+<error>
+<domain>OTHER</domain>
+<lang>Text</lang>
+<checker>SIGMA.missing_tls</checker>
+<type>sigma.missing_tls</type>
+<subtype>spring_boot_datasource_properties</subtype>
+<file>C:/Temp/test/WebGoat-main/src/main/resources/application-webwolf.properties</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The Spring Boot application's data source is configured to disable SSL by setting the `spring.datasource.url` attribute to a value without `useSSL=true`. Thus, sensitive data transmitted over an insecure communication channel could be read and modified by attackers.}}</description>
+<line>20</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Explicitly enable SSL by setting the `spring.datasource.url` attribute to a value that contains `useSSL=true`.}}</description>
+<line>20</line>
+</event>
+<extra>missing_tls_spring_boot_datasource_properties -- main/resources/application-webwolf.properties -- ##Σ-markup - ##Σ-markup - spring.datasource.url</extra>
+<subcategory>spring_boot_datasource_properties</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_tls_terraform_google_sql_db</checker>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.missing_tls_cloudformation_elastic_search</checker>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.missing_tls_cloudformation_doc_db</checker>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.missing_tls_spring_boot_datasource_properties</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Missing TLS</type>
+<cwe>319</cwe>
+<localEffect></localEffect>
+<longDescription>The Spring Boot application's data source is configured to disable SSL by setting the `spring.datasource.url` attribute to a value without `useSSL=true`. Thus, sensitive data transmitted over an insecure communication channel could be read and modified by attackers.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>Text</lang>
+<checker>SIGMA.missing_tls</checker>
+<type>sigma.missing_tls</type>
+<subtype>spring_boot_datasource_properties</subtype>
+<file>C:/Temp/test/WebGoat-main/src/main/resources/application-webgoat.properties</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The Spring Boot application's data source is configured to disable SSL by setting the `spring.datasource.url` attribute to a value without `useSSL=true`. Thus, sensitive data transmitted over an insecure communication channel could be read and modified by attackers.}}</description>
+<line>19</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Explicitly enable SSL by setting the `spring.datasource.url` attribute to a value that contains `useSSL=true`.}}</description>
+<line>19</line>
+</event>
+<extra>missing_tls_spring_boot_datasource_properties -- main/resources/application-webgoat.properties -- ##Σ-markup - ##Σ-markup - spring.datasource.url</extra>
+<subcategory>spring_boot_datasource_properties</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_tls_terraform_google_sql_db</checker>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.missing_tls_cloudformation_elastic_search</checker>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.missing_tls_cloudformation_doc_db</checker>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.missing_tls_spring_boot_datasource_properties</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Missing TLS</type>
+<cwe>319</cwe>
+<localEffect></localEffect>
+<longDescription>The Spring Boot application's data source is configured to disable SSL by setting the `spring.datasource.url` attribute to a value without `useSSL=true`. Thus, sensitive data transmitted over an insecure communication channel could be read and modified by attackers.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>Text</lang>
+<checker>SIGMA.missing_tls</checker>
+<type>sigma.missing_tls</type>
+<subtype>spring_boot_datasource_properties</subtype>
+<file>C:/Temp/test/WebGoat-main/src/test/resources/application-webgoat-test.properties</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The Spring Boot application's data source is configured to disable SSL by setting the `spring.datasource.url` attribute to a value without `useSSL=true`. Thus, sensitive data transmitted over an insecure communication channel could be read and modified by attackers.}}</description>
+<line>3</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Explicitly enable SSL by setting the `spring.datasource.url` attribute to a value that contains `useSSL=true`.}}</description>
+<line>3</line>
+</event>
+<extra>missing_tls_spring_boot_datasource_properties -- test/resources/application-webgoat-test.properties -- ##Σ-markup - ##Σ-markup - spring.datasource.url</extra>
+<subcategory>spring_boot_datasource_properties</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_tls_terraform_google_sql_db</checker>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.missing_tls_cloudformation_elastic_search</checker>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.missing_tls_cloudformation_doc_db</checker>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.missing_tls_spring_boot_datasource_properties</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Missing TLS</type>
+<cwe>319</cwe>
+<localEffect></localEffect>
+<longDescription>The Spring Boot application's data source is configured to disable SSL by setting the `spring.datasource.url` attribute to a value without `useSSL=true`. Thus, sensitive data transmitted over an insecure communication channel could be read and modified by attackers.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>Text</lang>
+<checker>SIGMA.missing_tls</checker>
+<type>sigma.missing_tls</type>
+<subtype>spring_boot_datasource_properties</subtype>
+<file>C:/Temp/test/WebGoat-main/src/test/resources/application-webwolf.properties</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The Spring Boot application's data source is configured to disable SSL by setting the `spring.datasource.url` attribute to a value without `useSSL=true`. Thus, sensitive data transmitted over an insecure communication channel could be read and modified by attackers.}}</description>
+<line>3</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Explicitly enable SSL by setting the `spring.datasource.url` attribute to a value that contains `useSSL=true`.}}</description>
+<line>3</line>
+</event>
+<extra>missing_tls_spring_boot_datasource_properties -- test/resources/application-webwolf.properties -- ##Σ-markup - ##Σ-markup - spring.datasource.url</extra>
+<subcategory>spring_boot_datasource_properties</subcategory>
+<antecedentMerge>
+<checker>SIGMA.missing_tls_terraform_google_sql_db</checker>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.missing_tls_cloudformation_elastic_search</checker>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.missing_tls_cloudformation_doc_db</checker>
+</antecedentMerge>
+<antecedentMerge>
+<checker>SIGMA.missing_tls_spring_boot_datasource_properties</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Missing TLS</type>
+<cwe>319</cwe>
+<localEffect></localEffect>
+<longDescription>The Spring Boot application's data source is configured to disable SSL by setting the `spring.datasource.url` attribute to a value without `useSSL=true`. Thus, sensitive data transmitted over an insecure communication channel could be read and modified by attackers.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

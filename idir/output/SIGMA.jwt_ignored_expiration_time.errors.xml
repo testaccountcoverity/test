@@ -1,0 +1,40 @@
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>SIGMA.jwt_ignored_expiration_time</checker>
+<type>sigma.jwt_ignored_expiration_time</type>
+<subtype>jose4j</subtype>
+<file>C:/Temp/test/WebGoat-main/src/main/java/org/owasp/webgoat/webwolf/jwt/JWTToken.java</file>
+<isRapidScan>true</isRapidScan>
+<function>org.owasp.webgoat.webwolf.jwt.JWTToken::validateSignature(String, String)Boolean</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The instance of `JwtConsumerBuilder` ignores the expiration time by default, unless the `setRequireExpirationTime()` function is called explicitly.
+Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen token.}}</description>
+<line>124</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Verify that the token is still valid by invoking the `setRequireExpirationTime()` function.
+Invoke the `setMaxFutureValidityInMinutes()` function if you need to tolerate a small amount of clock skew.}}</description>
+<line>124</line>
+</event>
+<extra>jwt_ignored_expiration_time_jose4j -- webwolf/jwt/JWTToken.java</extra>
+<subcategory>jose4j</subcategory>
+<antecedentMerge>
+<checker>SIGMA.jwt_ignored_expiration_time_jose4j</checker>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>High</impact>
+<type>JSON Web Token expiration time ignored</type>
+<cwe>613</cwe>
+<localEffect></localEffect>
+<longDescription>The instance of `JwtConsumerBuilder` ignores the expiration time by default, unless the `setRequireExpirationTime()` function is called explicitly.
+Ignoring the expiration time for a JSON web token means it is valid forever. Since the token never expires, an attacker has a longer window to brute-force or exploit the stolen token.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

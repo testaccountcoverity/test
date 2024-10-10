@@ -1,0 +1,52 @@
+{
+  "configId": {
+    "id": "5f7ec11d-b5be-4a12-96c8-3ae203bb5bbd"
+  },
+  "scanType": {
+    "type": 2,
+    "name": "Coverity"
+  },
+  "coverityConfig": {
+    "installationLocation": {
+      "source": {
+        "type": 8
+      }
+    },
+    "configFilePath": {
+      "source": {
+        "type": 8
+      }
+    },
+    "additionalCaptureArguments": {
+      "source": {
+        "type": 8
+      }
+    },
+    "additionalAnalysisArguments": {
+      "source": {
+        "type": 8
+      }
+    }
+  },
+  "bridgeConfig": {},
+  "buildConfig": {
+    "buildCommand": {
+      "source": {
+        "type": 8
+      }
+    },
+    "cleanCommand": {
+      "source": {
+        "type": 8
+      }
+    }
+  },
+  "scanMode": {
+    "name": "All Files"
+  },
+  "path": {
+    "source": {
+      "type": 8
+    }
+  }
+}

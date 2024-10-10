@@ -1,0 +1,693 @@
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>NULL_RETURNS</checker>
+<type>null_pointer_dereference_exception</type>
+<subtype>return_value</subtype>
+<template>null_returns_multievent_v1</template>
+<file>C:/Temp/test/WebGoat-main/src/main/resources/webgoat/static/js/libs/text.js</file>
+<isRapidScan>false</isRapidScan>
+<function>!text.js!%IPFE:%COND_text.get%1</function>
+<functionMergeName>!text.js!%IPFE:%COND_text.get</functionMergeName>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>returned_null</tag>
+<description>{CovLStrv2{{t{{0} returns {code{null}} or {code{undefined}} (checked {1} out of {2} times).}{{code{text.createXhr}}}{1}{2}}}}</description>
+<line>269</line>
+<column>13</column>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Temp/test/WebGoat-main/src/main/resources/webgoat/static/js/libs/text.js</file>
+<function>!text.js!%IPFE:text.createXhr</function>
+<key>fa1270c0e2146e4506b1175ccd79c5cd</key>
+<id>2</id>
+</model_ptr>
+</event>
+<event>
+<event_set>1</event_set>
+<tag>example_checked</tag>
+<description>{CovLStrv2{{t{Example {0}: }{1}}{t{{0} has its value checked in {1}.}{{code{text.createXhr()}}}{{code{(masterConfig.env === &quot;xhr&quot;) || (!masterConfig.env &amp;&amp; text.createXhr())}}}}}}</description>
+<line>266</line>
+<column>12</column>
+</event>
+<event>
+<tag>var_assigned</tag>
+<description>{CovLStrv2{{t{Assigning {0} to the {code{null}} or {code{undefined}} return value from {1}.}{{code{xhr}}}{{code{text.createXhr}}}}}}</description>
+<line>269</line>
+<column>13</column>
+</event>
+<event>
+<main>true</main>
+<tag>property_access</tag>
+<description>{CovLStrv2{{t{Accessing a property of null-like value {0}.}{{code{xhr}}}}}}</description>
+<line>270</line>
+<column>13</column>
+</event>
+<extra>createXhr,text</extra>
+<subcategory>none</subcategory>
+<eventSetCaptions>
+<eventSetCaption>Call to a function that returns null or undefined</eventSetCaption>
+<eventSetCaption>Examples where the return value was checked for null or undefined</eventSetCaption>
+</eventSetCaptions>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>NULL_RETURNS</checker>
+<type>null_pointer_dereference_exception</type>
+<subtype>return_value</subtype>
+<template>null_returns_multievent_v1</template>
+<file>C:/Temp/test/WebGoat-main/src/main/resources/webgoat/static/js/libs/ace.js</file>
+<isRapidScan>false</isRapidScan>
+<function>!ace.js!%IPFE%42:Folding:this.getCommentFoldRange</function>
+<functionMergeName>!ace.js!%IPFE:Folding:this.getCommentFoldRange</functionMergeName>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{token}}}}}}</description>
+<line>9467</line>
+<column>9</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{/^comment|string/.test(type)}}}}}}</description>
+<line>9467</line>
+<column>9</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{type == &quot;comment&quot;}}}}}}</description>
+<line>9469</line>
+<column>13</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{dir != 1}}}}}}</description>
+<line>9473</line>
+<column>13</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{token}}}}}}</description>
+<line>9474</line>
+<column>17</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{dir != -1}}}}}}</description>
+<line>9485</line>
+<column>13</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{lastRow == -1}}}}}}</description>
+<line>9489</line>
+<column>21</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{!re.test(state)}}}}}}</description>
+<line>9491</line>
+<column>25</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>if_fallthrough</tag>
+<description>{CovLStrv2{{t{Falling through to end of if statement.}}}}</description>
+<line>9493</line>
+<column>22</column>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>if_end</tag>
+<description>{CovLStrv2{{t{End of if statement.}}}}</description>
+<line>9495</line>
+<column>22</column>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{token}}}}}}</description>
+<line>9487</line>
+<column>17</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>returned_null</tag>
+<description>{CovLStrv2{{t{{0} returns {code{null}} or {code{undefined}} (checked {1} out of {2} times).}{{code{iterator.stepBackward}}}{6}{7}}}}</description>
+<line>9497</line>
+<column>17</column>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Temp/test/WebGoat-main/src/main/resources/webgoat/static/js/libs/ace.js</file>
+<function>!ace.js!%IPFE%30:%ANONYMOUS:this.stepBackward</function>
+<key>00fed39006a8207d0eb4738847d38d26</key>
+<id>3</id>
+</model_ptr>
+</event>
+<event>
+<event_set>1</event_set>
+<tag>example_assign</tag>
+<description>{CovLStrv2{{t{Example {0}: }{1}}{t{Assigning: {0} = return value from {1}.}{{code{token}}}{{code{iterator.stepBackward()}}}}}}</description>
+<line>9834</line>
+<column>17</column>
+</event>
+<event>
+<event_set>1</event_set>
+<tag>example_checked</tag>
+<description>{CovLStrv2{{t{Example {0} (cont.): }{1}}{t{{0} has its value checked in {1}.}{{code{token}}}{{code{token}}}}}}</description>
+<line>9833</line>
+<column>13</column>
+</event>
+<event>
+<event_set>2</event_set>
+<tag>example_assign</tag>
+<description>{CovLStrv2{{t{Example {0}: }{2}}{t{Assigning: {0} = return value from {1}.}{{code{token}}}{{code{iterator.stepBackward()}}}}}}</description>
+<line>7481</line>
+<column>17</column>
+</event>
+<event>
+<event_set>2</event_set>
+<tag>example_checked</tag>
+<description>{CovLStrv2{{t{Example {0} (cont.): }{2}}{t{{0} has its value checked in {1}.}{{code{token}}}{{code{token}}}}}}</description>
+<line>7473</line>
+<column>13</column>
+</event>
+<event>
+<event_set>3</event_set>
+<tag>example_assign</tag>
+<description>{CovLStrv2{{t{Example {0}: }{3}}{t{Assigning: {0} = return value from {1}.}{{code{token}}}{{code{iterator.stepBackward()}}}}}}</description>
+<line>9475</line>
+<column>21</column>
+</event>
+<event>
+<event_set>3</event_set>
+<tag>example_checked</tag>
+<description>{CovLStrv2{{t{Example {0} (cont.): }{3}}{t{{0} has its value checked in {1}.}{{code{token}}}{{code{token}}}}}}</description>
+<line>9474</line>
+<column>17</column>
+</event>
+<event>
+<event_set>4</event_set>
+<tag>example_assign</tag>
+<description>{CovLStrv2{{t{Example {0}: }{4}}{t{Assigning: {0} = return value from {1}.}{{code{prevToken}}}{{code{iterator.stepBackward()}}}}}}</description>
+<line>14569</line>
+<column>21</column>
+</event>
+<event>
+<event_set>4</event_set>
+<tag>example_checked</tag>
+<description>{CovLStrv2{{t{Example {0} (cont.): }{4}}{t{{0} has its value checked in {1}.}{{code{prevToken}}}{{code{prevToken}}}}}}</description>
+<line>14571</line>
+<column>21</column>
+</event>
+<event>
+<event_set>5</event_set>
+<tag>example_assign</tag>
+<description>{CovLStrv2{{t{Example {0}: }{5}}{t{Assigning: {0} = return value from {1}.}{{code{prevToken}}}{{code{iterator.stepBackward()}}}}}}</description>
+<line>13413</line>
+<column>13</column>
+</event>
+<event>
+<event_set>5</event_set>
+<tag>example_assign</tag>
+<description>{CovLStrv2{{t{Example {0} (cont.): }{5}}{t{Assigning: {0} = {1}.  Both are now equal to the return value from {2}.}{{code{token}}}{{code{prevToken}}}{{code{iterator.stepBackward()}}}}}}</description>
+<line>13431</line>
+<column>21</column>
+</event>
+<event>
+<event_set>5</event_set>
+<tag>example_checked</tag>
+<description>{CovLStrv2{{t{Example {0} (cont.): }{5}}{t{{0} has its value checked in {1}.}{{code{token}}}{{code{token}}}}}}</description>
+<line>13434</line>
+<column>21</column>
+</event>
+<event>
+<tag>var_assigned</tag>
+<description>{CovLStrv2{{t{Assigning {0} to the {code{null}} or {code{undefined}} return value from {1}.}{{code{token}}}{{code{iterator.stepBackward}}}}}}</description>
+<line>9497</line>
+<column>17</column>
+</event>
+<event>
+<tag>if_fallthrough</tag>
+<description>{CovLStrv2{{t{Falling through to end of if statement.}}}}</description>
+<line>9498</line>
+<column>14</column>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>if_end</tag>
+<description>{CovLStrv2{{t{End of if statement.}}}}</description>
+<line>9499</line>
+<column>52</column>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<main>true</main>
+<tag>property_access</tag>
+<description>{CovLStrv2{{t{Accessing a property of null-like value {0}.}{{code{token}}}}}}</description>
+<line>9502</line>
+<column>13</column>
+</event>
+<extra>iterator,stepBackward</extra>
+<subcategory>none</subcategory>
+<eventSetCaptions>
+<eventSetCaption>Call to a function that returns null or undefined</eventSetCaption>
+<eventSetCaption>Examples where the return value was checked for null or undefined</eventSetCaption>
+</eventSetCaptions>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>NULL_RETURNS</checker>
+<type>null_pointer_dereference_exception</type>
+<subtype>return_value</subtype>
+<template>null_returns_multievent_v1</template>
+<file>C:/Temp/test/WebGoat-main/src/main/resources/webgoat/static/js/libs/ace.js</file>
+<isRapidScan>false</isRapidScan>
+<function>!ace.js!%IPFE%50:%ANONYMOUS:this.$highlightTags:%IPFE</function>
+<functionMergeName>!ace.js!%IPFE:%ANONYMOUS:this.$highlightTags:%IPFE</functionMergeName>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!session}}}}}}</description>
+<line>13393</line>
+<column>13</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!session.bgTokenizer}}}}}}</description>
+<line>13393</line>
+<column>13</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!token}}}}}}</description>
+<line>13399</line>
+<column>13</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!/\b(?:tag-open|tag-name)/.test(token.type)}}}}}}</description>
+<line>13399</line>
+<column>13</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{token.type.indexOf(&quot;tag-open&quot;) != -1}}}}}}</description>
+<line>13405</line>
+<column>13</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!token}}}}}}</description>
+<line>13407</line>
+<column>17</column>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>if_end</tag>
+<description>{CovLStrv2{{t{End of if statement.}}}}</description>
+<line>13408</line>
+<column>28</column>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>returned_null</tag>
+<description>{CovLStrv2{{t{{0} returns {code{null}} or {code{undefined}} (checked {1} out of {2} times).}{{code{iterator.stepBackward}}}{6}{7}}}}</description>
+<line>13413</line>
+<column>13</column>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Temp/test/WebGoat-main/src/main/resources/webgoat/static/js/libs/ace.js</file>
+<function>!ace.js!%IPFE%30:%ANONYMOUS:this.stepBackward</function>
+<key>00fed39006a8207d0eb4738847d38d26</key>
+<id>3</id>
+</model_ptr>
+</event>
+<event>
+<event_set>1</event_set>
+<tag>example_assign</tag>
+<description>{CovLStrv2{{t{Example {0}: }{1}}{t{Assigning: {0} = return value from {1}.}{{code{token}}}{{code{iterator.stepBackward()}}}}}}</description>
+<line>9834</line>
+<column>17</column>
+</event>
+<event>
+<event_set>1</event_set>
+<tag>example_checked</tag>
+<description>{CovLStrv2{{t{Example {0} (cont.): }{1}}{t{{0} has its value checked in {1}.}{{code{token}}}{{code{token}}}}}}</description>
+<line>9833</line>
+<column>13</column>
+</event>
+<event>
+<event_set>2</event_set>
+<tag>example_assign</tag>
+<description>{CovLStrv2{{t{Example {0}: }{2}}{t{Assigning: {0} = return value from {1}.}{{code{token}}}{{code{iterator.stepBackward()}}}}}}</description>
+<line>7481</line>
+<column>17</column>
+</event>
+<event>
+<event_set>2</event_set>
+<tag>example_checked</tag>
+<description>{CovLStrv2{{t{Example {0} (cont.): }{2}}{t{{0} has its value checked in {1}.}{{code{token}}}{{code{token}}}}}}</description>
+<line>7473</line>
+<column>13</column>
+</event>
+<event>
+<event_set>3</event_set>
+<tag>example_assign</tag>
+<description>{CovLStrv2{{t{Example {0}: }{3}}{t{Assigning: {0} = return value from {1}.}{{code{token}}}{{code{iterator.stepBackward()}}}}}}</description>
+<line>9475</line>
+<column>21</column>
+</event>
+<event>
+<event_set>3</event_set>
+<tag>example_checked</tag>
+<description>{CovLStrv2{{t{Example {0} (cont.): }{3}}{t{{0} has its value checked in {1}.}{{code{token}}}{{code{token}}}}}}</description>
+<line>9474</line>
+<column>17</column>
+</event>
+<event>
+<event_set>4</event_set>
+<tag>example_assign</tag>
+<description>{CovLStrv2{{t{Example {0}: }{4}}{t{Assigning: {0} = return value from {1}.}{{code{prevToken}}}{{code{iterator.stepBackward()}}}}}}</description>
+<line>14569</line>
+<column>21</column>
+</event>
+<event>
+<event_set>4</event_set>
+<tag>example_checked</tag>
+<description>{CovLStrv2{{t{Example {0} (cont.): }{4}}{t{{0} has its value checked in {1}.}{{code{prevToken}}}{{code{prevToken}}}}}}</description>
+<line>14571</line>
+<column>21</column>
+</event>
+<event>
+<event_set>5</event_set>
+<tag>example_assign</tag>
+<description>{CovLStrv2{{t{Example {0}: }{5}}{t{Assigning: {0} = return value from {1}.}{{code{prevToken}}}{{code{iterator.stepBackward()}}}}}}</description>
+<line>13413</line>
+<column>13</column>
+</event>
+<event>
+<event_set>5</event_set>
+<tag>example_assign</tag>
+<description>{CovLStrv2{{t{Example {0} (cont.): }{5}}{t{Assigning: {0} = {1}.  Both are now equal to the return value from {2}.}{{code{token}}}{{code{prevToken}}}{{code{iterator.stepBackward()}}}}}}</description>
+<line>13431</line>
+<column>21</column>
+</event>
+<event>
+<event_set>5</event_set>
+<tag>example_checked</tag>
+<description>{CovLStrv2{{t{Example {0} (cont.): }{5}}{t{{0} has its value checked in {1}.}{{code{token}}}{{code{token}}}}}}</description>
+<line>13434</line>
+<column>21</column>
+</event>
+<event>
+<tag>var_assigned</tag>
+<description>{CovLStrv2{{t{Assigning {0} to the {code{null}} or {code{undefined}} return value from {1}.}{{code{prevToken}}}{{code{iterator.stepBackward}}}}}}</description>
+<line>13413</line>
+<column>13</column>
+</event>
+<event>
+<main>true</main>
+<tag>property_access</tag>
+<description>{CovLStrv2{{t{Accessing a property of null-like value {0}.}{{code{prevToken}}}}}}</description>
+<line>13415</line>
+<column>13</column>
+</event>
+<extra>iterator,stepBackward</extra>
+<subcategory>none</subcategory>
+<eventSetCaptions>
+<eventSetCaption>Call to a function that returns null or undefined</eventSetCaption>
+<eventSetCaption>Examples where the return value was checked for null or undefined</eventSetCaption>
+</eventSetCaptions>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>JavaScript</lang>
+<checker>NULL_RETURNS</checker>
+<type>null_pointer_dereference_exception</type>
+<subtype>return_value</subtype>
+<template>null_returns_multievent_v1</template>
+<file>C:/Temp/test/WebGoat-main/src/main/resources/webgoat/static/js/libs/ace.js</file>
+<isRapidScan>false</isRapidScan>
+<function>!ace.js!%IPFE%50:%ANONYMOUS:this.$highlightTags:%IPFE</function>
+<functionMergeName>!ace.js!%IPFE:%ANONYMOUS:this.$highlightTags:%IPFE</functionMergeName>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!session}}}}}}</description>
+<line>13393</line>
+<column>13</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!session.bgTokenizer}}}}}}</description>
+<line>13393</line>
+<column>13</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!token}}}}}}</description>
+<line>13399</line>
+<column>13</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!/\b(?:tag-open|tag-name)/.test(token.type)}}}}}}</description>
+<line>13399</line>
+<column>13</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{token.type.indexOf(&quot;tag-open&quot;) != -1}}}}}}</description>
+<line>13405</line>
+<column>13</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{!token}}}}}}</description>
+<line>13407</line>
+<column>17</column>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>if_end</tag>
+<description>{CovLStrv2{{t{End of if statement.}}}}</description>
+<line>13408</line>
+<column>28</column>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{prevToken.value == &quot;&lt;&quot;}}}}}}</description>
+<line>13415</line>
+<column>13</column>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>else_branch</tag>
+<description>{CovLStrv2{{t{Reached else branch.}}}}</description>
+<line>13429</line>
+<column>20</column>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch.}{{code{token}}}}}}</description>
+<line>13434</line>
+<column>21</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{prevToken}}}}}}</description>
+<line>13430</line>
+<column>17</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{depth &lt;= 0}}}}}}</description>
+<line>13430</line>
+<column>17</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>returned_null</tag>
+<description>{CovLStrv2{{t{{0} returns {code{null}} or {code{undefined}} (checked {1} out of {2} times).}{{code{iterator.stepBackward}}}{6}{7}}}}</description>
+<line>13432</line>
+<column>21</column>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>C:/Temp/test/WebGoat-main/src/main/resources/webgoat/static/js/libs/ace.js</file>
+<function>!ace.js!%IPFE%30:%ANONYMOUS:this.stepBackward</function>
+<key>00fed39006a8207d0eb4738847d38d26</key>
+<id>3</id>
+</model_ptr>
+</event>
+<event>
+<event_set>1</event_set>
+<tag>example_assign</tag>
+<description>{CovLStrv2{{t{Example {0}: }{1}}{t{Assigning: {0} = return value from {1}.}{{code{token}}}{{code{iterator.stepBackward()}}}}}}</description>
+<line>9834</line>
+<column>17</column>
+</event>
+<event>
+<event_set>1</event_set>
+<tag>example_checked</tag>
+<description>{CovLStrv2{{t{Example {0} (cont.): }{1}}{t{{0} has its value checked in {1}.}{{code{token}}}{{code{token}}}}}}</description>
+<line>9833</line>
+<column>13</column>
+</event>
+<event>
+<event_set>2</event_set>
+<tag>example_assign</tag>
+<description>{CovLStrv2{{t{Example {0}: }{2}}{t{Assigning: {0} = return value from {1}.}{{code{token}}}{{code{iterator.stepBackward()}}}}}}</description>
+<line>7481</line>
+<column>17</column>
+</event>
+<event>
+<event_set>2</event_set>
+<tag>example_checked</tag>
+<description>{CovLStrv2{{t{Example {0} (cont.): }{2}}{t{{0} has its value checked in {1}.}{{code{token}}}{{code{token}}}}}}</description>
+<line>7473</line>
+<column>13</column>
+</event>
+<event>
+<event_set>3</event_set>
+<tag>example_assign</tag>
+<description>{CovLStrv2{{t{Example {0}: }{3}}{t{Assigning: {0} = return value from {1}.}{{code{token}}}{{code{iterator.stepBackward()}}}}}}</description>
+<line>9475</line>
+<column>21</column>
+</event>
+<event>
+<event_set>3</event_set>
+<tag>example_checked</tag>
+<description>{CovLStrv2{{t{Example {0} (cont.): }{3}}{t{{0} has its value checked in {1}.}{{code{token}}}{{code{token}}}}}}</description>
+<line>9474</line>
+<column>17</column>
+</event>
+<event>
+<event_set>4</event_set>
+<tag>example_assign</tag>
+<description>{CovLStrv2{{t{Example {0}: }{4}}{t{Assigning: {0} = return value from {1}.}{{code{prevToken}}}{{code{iterator.stepBackward()}}}}}}</description>
+<line>14569</line>
+<column>21</column>
+</event>
+<event>
+<event_set>4</event_set>
+<tag>example_checked</tag>
+<description>{CovLStrv2{{t{Example {0} (cont.): }{4}}{t{{0} has its value checked in {1}.}{{code{prevToken}}}{{code{prevToken}}}}}}</description>
+<line>14571</line>
+<column>21</column>
+</event>
+<event>
+<event_set>5</event_set>
+<tag>example_assign</tag>
+<description>{CovLStrv2{{t{Example {0}: }{5}}{t{Assigning: {0} = return value from {1}.}{{code{prevToken}}}{{code{iterator.stepBackward()}}}}}}</description>
+<line>13413</line>
+<column>13</column>
+</event>
+<event>
+<event_set>5</event_set>
+<tag>example_assign</tag>
+<description>{CovLStrv2{{t{Example {0} (cont.): }{5}}{t{Assigning: {0} = {1}.  Both are now equal to the return value from {2}.}{{code{token}}}{{code{prevToken}}}{{code{iterator.stepBackward()}}}}}}</description>
+<line>13431</line>
+<column>21</column>
+</event>
+<event>
+<event_set>5</event_set>
+<tag>example_checked</tag>
+<description>{CovLStrv2{{t{Example {0} (cont.): }{5}}{t{{0} has its value checked in {1}.}{{code{token}}}{{code{token}}}}}}</description>
+<line>13434</line>
+<column>21</column>
+</event>
+<event>
+<tag>var_assigned</tag>
+<description>{CovLStrv2{{t{Assigning {0} to the {code{null}} or {code{undefined}} return value from {1}.}{{code{prevToken}}}{{code{iterator.stepBackward}}}}}}</description>
+<line>13432</line>
+<column>21</column>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{token}}}}}}</description>
+<line>13434</line>
+<column>21</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{token.value === tag}}}}}}</description>
+<line>13434</line>
+<column>21</column>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{token.type.indexOf(&quot;tag-name&quot;) !== -1}}}}}}</description>
+<line>13434</line>
+<column>21</column>
+<path_event></path_event>
+</event>
+<event>
+<main>true</main>
+<tag>property_access</tag>
+<description>{CovLStrv2{{t{Accessing a property of null-like value {0}.}{{code{prevToken}}}}}}</description>
+<line>13435</line>
+<column>25</column>
+</event>
+<extra>iterator,stepBackward</extra>
+<subcategory>none</subcategory>
+<eventSetCaptions>
+<eventSetCaption>Call to a function that returns null or undefined</eventSetCaption>
+<eventSetCaption>Examples where the return value was checked for null or undefined</eventSetCaption>
+</eventSetCaptions>
+</error>

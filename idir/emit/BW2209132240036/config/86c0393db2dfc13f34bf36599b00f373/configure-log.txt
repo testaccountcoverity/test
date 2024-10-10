@@ -1,0 +1,4 @@
+Native Compiler invocation: ./ --coverity_resp_file=C:\Temp\test\WebGoat-main\idir\tmp\cicf-ff40d74153d9b2023b6b5675ed5b270c\cov-translate-resp-file1
+Working directory: C:\Temp\test\WebGoat-main
+Comptype: capture-config-files
+* Configuring Configuration Filesystem Capture

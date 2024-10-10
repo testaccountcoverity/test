@@ -1,0 +1,90 @@
+<error>
+<domain>OTHER</domain>
+<lang>Text</lang>
+<checker>SIGMA.verbose_error_message</checker>
+<type>sigma.verbose_error_message</type>
+<subtype>spring_boot_stacktrace_properties</subtype>
+<file>C:/Temp/test/WebGoat-main/src/main/resources/application-webwolf.properties</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The Spring Boot main application server is configured to allow stack traces to be displayed in an error page. The stack traces might contain sensitive information and should not be displayed.}}</description>
+<line>1</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set `server.error.include-stacktrace` to `never` or omit it as the default value is `never`.}}</description>
+<line>1</line>
+</event>
+<extra>verbose_error_message_spring_boot_stacktrace_properties -- main/resources/application-webwolf.properties -- ##Σ-markup - ##Σ-markup - server.error.include-stacktrace</extra>
+<subcategory>spring_boot_stacktrace_properties</subcategory>
+<antecedentMerge>
+<checker>SIGMA.verbose_error_message_spring_boot_stacktrace_properties</checker>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra>/resources/application-webwolf.properties</extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Verbose error message</type>
+<cwe>209</cwe>
+<localEffect></localEffect>
+<longDescription>The Spring Boot main application server is configured to allow stack traces to be displayed in an error page. The stack traces might contain sensitive information and should not be displayed.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>OTHER</domain>
+<lang>Text</lang>
+<checker>SIGMA.verbose_error_message</checker>
+<type>sigma.verbose_error_message</type>
+<subtype>spring_boot_stacktrace_properties</subtype>
+<file>C:/Temp/test/WebGoat-main/src/main/resources/application-webgoat.properties</file>
+<isRapidScan>true</isRapidScan>
+<function>unknown</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>Sigma main event</tag>
+<description>{CovLStrv2{The Spring Boot main application server is configured to allow stack traces to be displayed in an error page. The stack traces might contain sensitive information and should not be displayed.}}</description>
+<line>1</line>
+</event>
+<event>
+<remediation>true</remediation>
+<tag>remediation</tag>
+<description>{CovLStrv2{Set `server.error.include-stacktrace` to `never` or omit it as the default value is `never`.}}</description>
+<line>1</line>
+</event>
+<extra>verbose_error_message_spring_boot_stacktrace_properties -- main/resources/application-webgoat.properties -- ##Σ-markup - ##Σ-markup - server.error.include-stacktrace</extra>
+<subcategory>spring_boot_stacktrace_properties</subcategory>
+<antecedentMerge>
+<checker>SIGMA.verbose_error_message_spring_boot_stacktrace_properties</checker>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra></extra>
+</antecedentMerge>
+<antecedentMerge>
+<function></function>
+<extra>/resources/application-webgoat.properties</extra>
+</antecedentMerge>
+<typePropertiesGroup>
+<category>Sigma</category>
+<impact>Low</impact>
+<type>Verbose error message</type>
+<cwe>209</cwe>
+<localEffect></localEffect>
+<longDescription>The Spring Boot main application server is configured to allow stack traces to be displayed in an error page. The stack traces might contain sensitive information and should not be displayed.</longDescription>
+<securityKind>true</securityKind>
+</typePropertiesGroup>
+</error>

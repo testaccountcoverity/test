@@ -1,0 +1,95 @@
+# Version: d59b675bea p-2024.6-push-53
+# Command Line: C:\Users\JoãoVideira\AppData\Roaming\Synopsys\desktop\controller\installedtools\coverity-analysis\2024.6.1\bin\cov-commit-defects --dir C:\Temp\test\WebGoat-main\idir --url https://synopsys-coverity-balwurk:8442/ --stream webgoatcli --on-new-cert distrust --ticker-mode no-spin --auth-key-file C:\Users\JoãoVideira\AppData\Roaming\Coverity\authkeys\ak-synopsys-coverity-balwurk-8442
+timer                                          ms      calls
+------------------------------------------------------------
+cov-commit-defects                          16516          1
+  set_working_domain                            0          1
+  send_analysis_and_build_metrics              16          2
+    open emit DB                                0          1
+  send_defects_v3                            2828          2
+    HashKVS mappingBegin                        0          2
+      HashKVSBigLockRead                        0          2
+    HashKVS find                                0          8
+      HashKVSBigLockRead                        0          8
+      find                                      0          8
+        read partial table                      0          8
+    serialized_event_lists_t::xfer              0          8
+      xferLocs                                  0          8
+      xferUnserializedEvents                    0          8
+  start_determining_blame_v2                 1406          1
+  send_snapshot_info                            0          1
+  send_analysis_settings_v1                     0          1
+  send_collectable_analysis_metrics             0          1
+  send_his_metrics                              0          1
+  send_sourcefile_descriptions_v3              16          1
+    retrieve_string_from_table                  0        529
+  send_file_contents_dev                      218          1
+    retrieve_string_from_table                  0        522
+  send_filtering_report                         0          1
+  send_xrefs_v2                               110          1
+    HashKVS mappingBegin                        0          1
+      HashKVSBigLockRead                        0          1
+  send_functions_v1                           125          1
+  send_owners_v1                                0          1
+  send_output_files_v1                        657          1
+  send_scm_change_record_md5s                   0          1
+    open emit DB                                0          1
+  send_scm_annotation_md5s                     15          1
+    open emit DB                               15          1
+  send_analysis_summaries_md5_v1                0          1
+    HashKVS has_key                             0          1
+      HashKVSBigLockRead                        0          1
+      find                                      0          1
+        read partial table                      0          1
+    HashKVS mappingBegin                        0          1
+      HashKVSBigLockRead                        0          1
+  send_analysis_summaries_contents_v1         485          1
+    HashKVS find                                0        116
+      HashKVSBigLockRead                        0        116
+      find                                      0        116
+        read partial table                      0        116
+  send_desktop_analysis_data_v1                 0          1
+    HashKVS find                                0          1
+      HashKVSBigLockRead                        0          1
+      find                                      0          1
+        read partial table                      0          1
+  send_timestamp_v1                             0          1
+  check_updates_v0                              0          1
+  (left over)                               10640
+
+activity                                       ms      calls
+------------------------------------------------------------
+cov-commit-defects                          16516          1
+set_working_domain                              0          1
+send_analysis_and_build_metrics                16          2
+open emit DB                                   15          3
+send_defects_v3                              2828          2
+HashKVS mappingBegin                            0          4
+HashKVSBigLockRead                              0        130
+HashKVS find                                    0        125
+find                                            0        126
+read partial table                              0        126
+serialized_event_lists_t::xfer                  0          8
+xferLocs                                        0          8
+xferUnserializedEvents                          0          8
+start_determining_blame_v2                   1406          1
+send_snapshot_info                              0          1
+send_analysis_settings_v1                       0          1
+send_collectable_analysis_metrics               0          1
+send_his_metrics                                0          1
+send_sourcefile_descriptions_v3                16          1
+retrieve_string_from_table                      0       1051
+send_file_contents_dev                        218          1
+send_filtering_report                           0          1
+send_xrefs_v2                                 110          1
+send_functions_v1                             125          1
+send_owners_v1                                  0          1
+send_output_files_v1                          657          1
+send_scm_change_record_md5s                     0          1
+send_scm_annotation_md5s                       15          1
+send_analysis_summaries_md5_v1                  0          1
+HashKVS has_key                                 0          1
+send_analysis_summaries_contents_v1           485          1
+send_desktop_analysis_data_v1                   0          1
+send_timestamp_v1                               0          1
+check_updates_v0                                0          1
