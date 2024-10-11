@@ -16,7 +16,7 @@ jobs:
         if: ${{ github.event_name != 'pull_request' }}
         uses: synopsys-sig/synopsys-action@v1.13.0
         with:
-          coverity_url: ${{ secrets.COVERITY_URL }}
+          coverity_url: https://synopsys-coverity-balwurk:8442/
           coverity_user: ${{ secrets.COVERITY_USER }}
           coverity_passphrase: ${{ secrets.COVERITY_PASSPHRASE }}
           coverity_project_name: webgoatcli
