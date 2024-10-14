@@ -21,6 +21,6 @@ jobs:
           coverity_passphrase: ${{ secrets.COVERITY_PASSPHRASE }}
           coverity_project_name: webgoatcli
           coverity_stream_name: webgoatcli
-          coverity_insecure: true
-          coverity_policy_view: 'Outstanding Issues'
+          coverity_local: true
+
  
