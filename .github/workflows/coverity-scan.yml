@@ -44,5 +44,10 @@ jobs:
           --githubUrl ${{ github.server_url }} --repoName ${{ github.repository }} --checkoutPath ${{ github.repository }} ${{ github.workspace }} ${{ github.sha }}
        
         shell: bash
+      
+      - name: Upload SARIF Report
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: results.sarif
 
  
