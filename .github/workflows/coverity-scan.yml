@@ -7,6 +7,7 @@ on:
   workflow_dispatch:  
 jobs:
   build:
+    variable:  IDIR=$(find ${{ github.workspace }}/ -name idir)
     runs-on: self-hosted
     permissions: write-all
     steps:
