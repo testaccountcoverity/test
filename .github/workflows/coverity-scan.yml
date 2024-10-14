@@ -37,7 +37,7 @@ jobs:
       #    sarif_file: /home/azureuser/actions-runner/_work/test/test/idir/coverity-results_SARIF.json
       - name: test
         run: |
-         COVERITY_TOOL_HOME=/home/azureuser/synopsys/cov-analysis/*        
+         COVERITY_TOOL_HOME=/home/azureuser/synopsys/cov-analysis     
           IDIR=$(find ${{ github.workspace }}/ -name idir)
           $COVERITY_TOOL_HOME/bin/cov-format-errors --dir "$IDIR" --json-output-v10 issues.json
           $COVERITY_TOOL_HOME/node/bin/node $COVERITY_TOOL_HOME/SARIF/cov-format-sarif-for-github.js --inputFile issues.json --outputFile results.sarif \
