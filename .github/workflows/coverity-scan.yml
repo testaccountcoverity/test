@@ -32,7 +32,7 @@ jobs:
         run: node /home/azureuser/synopsys/cov-analysis/SARIF/cov-format-sarif-for-github.js --inputFile /home/azureuser/capture/coverity-results.json --outputFile /home/azureuser/capture/coverity-results_SARIF.json --githubUrl https://github.com --repoName testaccountcoverity/test --checkoutPath testaccountcoverity/test test/src 1212121212121212121212121212121212121212
 
       - name: Upload SARIF to GitHub
-        uses: github/codeql-action/upload-sarif@v2
+        uses: github/codeql-action/upload-sarif@v3
         with:
           sarif_file: /home/azureuser/capture/coverity-results_SARIF.json
 
