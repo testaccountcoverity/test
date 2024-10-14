@@ -29,7 +29,7 @@ jobs:
         shell: bash
 
       - name: Create SARIF file
-        run: node /home/azureuser/synopsys/cov-analysis/bin/SARIF/cov-format-sarif-for-github.js --inputFile /home/azureuser/capture/coverity-results.json --outputFile /home/azureuser/capture/coverity-results_SARIF.json --githubUrl https://github.com --repoName testaccountcoverity/test --checkoutPath testaccountcoverity/test test/src 1212121212121212121212121212121212121212
+        run: node /home/azureuser/synopsys/cov-analysis/SARIF/cov-format-sarif-for-github.js --inputFile /home/azureuser/capture/coverity-results.json --outputFile /home/azureuser/capture/coverity-results_SARIF.json --githubUrl https://github.com --repoName testaccountcoverity/test --checkoutPath testaccountcoverity/test test/src 1212121212121212121212121212121212121212
 
       - name: Upload SARIF to GitHub
         uses: github/codeql-action/upload-sarif@v2
