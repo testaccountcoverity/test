@@ -24,16 +24,19 @@ jobs:
       #    coverity_stream_name: webgoatcli
       #    coverity_local: true
 
-      - name: Run Cov-Format-Errors Command
-        run: /home/azureuser/synopsys/cov-analysis/bin/cov-format-errors --dir /home/azureuser/actions-runner/_work/test/test/idir/ --json-output-v7 /home/azureuser/actions-runner/_work/test/test/idir/coverity-results.json
+      #- name: Run Cov-Format-Errors Command
+      #  run: /home/azureuser/synopsys/cov-analysis/bin/cov-format-errors --dir /home/azureuser/actions-runner/_work/test/test/idir/ --json-output-v7 /home/azureuser/actions-runner/_work/test/test/idir/coverity-results.json
+      #  shell: bash
+
+      #- name: Create SARIF file
+      #  run: node /home/azureuser/synopsys/cov-analysis/SARIF/cov-format-sarif-for-github.js --inputFile /home/azureuser/actions-runner/_work/test/test/idir/coverity-results.json --outputFile /home/azureuser/actions-runner/_work/test/test/idir/coverity-results_SARIF.json --githubUrl https://github.com --repoName testaccountcoverity/test --checkoutPath testaccountcoverity/test test/src 1212121212121212121212121212121212121212
+
+      #- name: Upload SARIF to GitHub
+      #  uses: github/codeql-action/upload-sarif@v3
+      #  with:
+      #    sarif_file: /home/azureuser/actions-runner/_work/test/test/idir/coverity-results_SARIF.json
+      - name: test
+        run: COVERITY_TOOL_HOME=/home/azureuser/synopsys/cov-analysis/*        IDIR=$(find ${{ github.workspace }}/.bridge -name idir)        $COVERITY_TOOL_HOME/bin/cov-format-errors --dir "$IDIR" --json-output-v10 issues.json        $COVERITY_TOOL_HOME/node/bin/node $COVERITY_TOOL_HOME/SARIF/cov-format-sarif-for-github.js --inputFile issues.json --outputFile results.sarif \          --githubUrl ${{ github.server_url }} --repoName ${{ github.repository }} --checkoutPath ${{ github.repository }} ${{ github.workspace }} ${{ github.sha }}    - name: Upload SARIF Report      uses: github/codeql-action/upload-sarif@v3      with:        sarif_file: results.sarif
         shell: bash
-
-      - name: Create SARIF file
-        run: node /home/azureuser/synopsys/cov-analysis/SARIF/cov-format-sarif-for-github.js --inputFile /home/azureuser/actions-runner/_work/test/test/idir/coverity-results.json --outputFile /home/azureuser/actions-runner/_work/test/test/idir/coverity-results_SARIF.json --githubUrl https://github.com --repoName testaccountcoverity/test --checkoutPath testaccountcoverity/test test/src 1212121212121212121212121212121212121212
-
-      - name: Upload SARIF to GitHub
-        uses: github/codeql-action/upload-sarif@v3
-        with:
-          sarif_file: /home/azureuser/actions-runner/_work/test/test/idir/coverity-results_SARIF.json
 
  
