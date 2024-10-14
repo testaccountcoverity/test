@@ -39,8 +39,8 @@ jobs:
         run: |
          COVERITY_TOOL_HOME=/home/azureuser/synopsys/cov-analysis     
           IDIR=$(find ${{ github.workspace }}/ -name idir)
-          $COVERITY_TOOL_HOME/bin/cov-format-errors --dir "$IDIR" --json-output-v10 issues.json
-          $COVERITY_TOOL_HOME/node/bin/node $COVERITY_TOOL_HOME/SARIF/cov-format-sarif-for-github.js --inputFile issues.json --outputFile results.json \
+          $COVERITY_TOOL_HOME/bin/cov-format-errors --dir "$IDIR" --json-output-v10 $IDIR/issues.json
+          $COVERITY_TOOL_HOME/node/bin/node $COVERITY_TOOL_HOME/SARIF/cov-format-sarif-for-github.js --inputFile $IDIR/issues.json --outputFile $IDIR/results.json \
           --githubUrl ${{ github.server_url }} --repoName ${{ github.repository }} --checkoutPath ${{ github.repository }} ${{ github.workspace }} ${{ github.sha }}
        
         shell: bash
@@ -48,6 +48,6 @@ jobs:
       - name: Upload SARIF Report
         uses: github/codeql-action/upload-sarif@v3
         with:
-          sarif_file: /home/azureuser/actions-runner/_work/test/test/results.json
+          sarif_file: $IDIR/results.json
 
  
