@@ -7,7 +7,6 @@ on:
   workflow_dispatch:  
 jobs:
   build:
-    variable:  IDIR=$(find ${{ github.workspace }}/ -name idir)
     runs-on: self-hosted
     permissions: write-all
     steps:
@@ -49,6 +48,6 @@ jobs:
       - name: Upload SARIF Report
         uses: github/codeql-action/upload-sarif@v3
         with:
-          sarif_file: $IDIR/results.json
+          sarif_file: /home/azureuser/actions-runner/_work/test/test/idir/results.json
 
  
