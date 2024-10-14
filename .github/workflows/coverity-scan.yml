@@ -24,7 +24,6 @@ jobs:
       #    coverity_stream_name: webgoatcli
       #    coverity_local: true
 
-
       - name: Run Cov-Format-Errors Command
         run: /home/azureuser/synopsys/cov-analysis/bin/cov-format-errors --dir /home/azureuser/capture/ --json-output-v7 /home/azureuser/capture/coverity-results.json
         shell: bash
