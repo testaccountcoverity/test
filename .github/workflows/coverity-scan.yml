@@ -41,7 +41,7 @@ jobs:
         run: |
          COVERITY_TOOL_HOME=/home/azureuser/synopsys/cov-analysis     
           IDIR=$(find ${{ github.workspace }}/ -name idir)
-          $COVERITY_TOOL_HOME/bin/cov-format-errors --dir "$IDIR" --json-output-v7 $IDIR/issues.json
+          $COVERITY_TOOL_HOME/bin/cov-format-errors --dir "$IDIR" --json-output-v7 $IDIR/issues.json --strip-path C:
           $COVERITY_TOOL_HOME/node/bin/node $COVERITY_TOOL_HOME/SARIF/cov-format-sarif-for-github.js --inputFile $IDIR/issues.json --outputFile $IDIR/results.json \
           --githubUrl ${{ github.server_url }} --repoName ${{ github.repository }} --checkoutPath ${{ github.repository }} ${{ github.workspace }}/src ${{ github.sha }} 
         shell: bash
