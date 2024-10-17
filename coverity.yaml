@@ -16,12 +16,13 @@ commit:
 
     # Absolute URL of where to commit the Coverity Connect results.
     url: https://synopsys-coverity-balwurk:8442/
-    
-capture:
-  build:
-    clean-command: mvn -B clean
-    build-command: mvn -B -DskipTests package
-analyze:
-  checkers:
-    webapp-security:
-      enabled: true
+
+#  
+#capture:
+#  build:
+#    clean-command: mvn -B clean
+#    build-command: mvn -B -DskipTests package
+#analyze:
+#  checkers:
+#    webapp-security:
+#      enabled: true
